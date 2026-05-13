@@ -1,0 +1,192 @@
+{
+  "URLS": {
+    "HOME": "https://demo.nopcommerce.com/"
+  },
+  "MESSAGES": {
+    "HOME_BREADCRUMB": "Home",
+    "HOME_URL_REGEX": "demo\\.nopcommerce\\.com\\/?$",
+    "NO_PRODUCTS": "No products were found"
+  },
+  "PRODUCTS": {
+    "NOTEBOOK": "Apple MacBook Pro",
+    "CONFIGURABLE": "Build your own computer",
+    "SIMPLE": "Asus Laptop"
+  },
+  "CASES": [
+    {
+      "id": "PC-001",
+      "description": "Category Basic",
+      "flow": "categoryBasic",
+      "category": "Computers",
+      "expected": {
+        "title": "Computers",
+        "breadcrumb": "Home / Computers",
+        "subCategories": ["Desktops", "Notebooks", "Software"]
+      }
+    },
+    {
+      "id": "PC-002",
+      "description": "Category has no products",
+      "flow": "categoryNoProduct",
+      "category": "Computers",
+      "invalidQuery": "specs=9999",
+      "expected": {
+        "message": "No products were found"
+      }
+    },
+    {
+      "id": "PC-004",
+      "description": "Navigate to sub-category page",
+      "flow": "navigateSubCategory",
+      "category": "Computers",
+      "subCategory": "Notebooks",
+      "expected": {
+        "title": "Notebooks",
+        "breadcrumb": "Home / Computers / Notebooks"
+      }
+    },
+    {
+      "id": "PC-005",
+      "description": "Breadcrumb display correctly",
+      "flow": "breadcrumbDisplay",
+      "category": "Computers",
+      "expected": {
+        "breadcrumb": "Home / Computers"
+      }
+    },
+    {
+      "id": "PC-006",
+      "description": "Navigate to Home via breadcrumb",
+      "flow": "breadcrumbToHome",
+      "category": "Computers",
+      "breadcrumbClick": "Home",
+      "expected": {
+        "urlRegex": "demo\\.nopcommerce\\.com\\/?$"
+      }
+    },
+    {
+      "id": "PC-007",
+      "description": "Sub-category breadcrumb hierarchy",
+      "flow": "breadcrumbDisplay",
+      "category": "Computers",
+      "subCategory": "Notebooks",
+      "expected": {
+        "breadcrumb": "Home / Computers / Notebooks"
+      }
+    },
+    {
+      "id": "PC-008",
+      "description": "Navigate to parent category via breadcrumb",
+      "flow": "breadcrumbToParent",
+      "category": "Computers",
+      "subCategory": "Notebooks",
+      "expected": {
+        "title": "Computers",
+        "breadcrumb": "Home / Computers"
+      }
+    },
+    {
+      "id": "PC-014",
+      "description": "Navigate to product detail",
+      "flow": "productDetail",
+      "category": "Computers",
+      "subCategory": "Notebooks",
+      "productName": "Apple MacBook Pro",
+      "expected": {
+        "title": "Apple MacBook Pro",
+        "urlRegex": "apple-macbook-pro"
+      }
+    },
+    {
+      "id": "PC-015",
+      "description": "Add product to cart",
+      "flow": "addToCart",
+      "category": "Computers",
+      "subCategory": "Notebooks",
+      "productName": "Asus Laptop"
+    },
+    {
+      "id": "PC-016",
+      "description": "Require option before add to cart",
+      "flow": "requireOptionCart",
+      "category": "Computers",
+      "subCategory": "Desktops",
+      "productName": "Build your own computer",
+      "expected": {
+        "urlRegex": "build-your-own-computer"
+      }
+    },
+    {
+      "id": "PC-017",
+      "description": "Add product to wishlist",
+      "flow": "addToWishlist",
+      "category": "Computers",
+      "subCategory": "Notebooks",
+      "productName": "Asus Laptop"
+    },
+    {
+      "id": "PC-018",
+      "description": "Require option before add to wishlist",
+      "flow": "requireOptionWishlist",
+      "category": "Computers",
+      "subCategory": "Desktops",
+      "productName": "Build your own computer",
+      "expected": {
+        "urlRegex": "build-your-own-computer"
+      }
+    },
+    {
+      "id": "PC-019",
+      "description": "Add product to compare list",
+      "flow": "addToCompare",
+      "category": "Computers",
+      "subCategory": "Notebooks",
+      "productName": "Asus Laptop"
+    },
+    {
+      "id": "PC-022",
+      "description": "Previous disabled on first page",
+      "flow": "paginationFirst",
+      "category": "Electronics",
+      "subCategory": "Cell phones",
+      "pageSize": "3",
+      "expected": { "currentPage": 1 }
+    },
+    {
+      "id": "PC-023",
+      "description": "Navigate to next page",
+      "flow": "paginationNext",
+      "category": "Electronics",
+      "subCategory": "Cell phones",
+      "pageSize": "3",
+      "expected": { "currentPage": 2 }
+    },
+    {
+      "id": "PC-025",
+      "description": "Navigate to previous page",
+      "flow": "paginationPrevious",
+      "category": "Electronics",
+      "subCategory": "Cell phones",
+      "pageSize": "3",
+      "expected": { "currentPage": 1 }
+    },
+    {
+      "id": "PC-026",
+      "description": "Change page size",
+      "flow": "pageSizeChange",
+      "category": "Electronics",
+      "subCategory": "Cell phones",
+      "pageSize": "3",
+      "expected": { "productsPerPage": 3 }
+    },
+    {
+      "id": "PC-027",
+      "description": "Reset page when changing page size",
+      "flow": "pageSizeReset",
+      "category": "Electronics",
+      "subCategory": "Cell phones",
+      "pageSize": "3",
+      "expected": { "currentPage": 1 }
+    }
+  ]
+}

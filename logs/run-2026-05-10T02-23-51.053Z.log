@@ -1,0 +1,34 @@
+[2026-05-10T02:23:51.097Z] ================================================================================
+[2026-05-10T02:23:51.099Z] ===== START CART TEST =====
+[2026-05-10T02:23:51.100Z] ================================================================================
+[2026-05-10T02:23:51.906Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-10T02:23:51.907Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-10T02:23:52.377Z] Waiting for Search Input to be visible
+[2026-05-10T02:23:58.368Z] Search Input is visible
+[2026-05-10T02:23:58.370Z] ================================================================================
+[2026-05-10T02:23:58.371Z] RUN TEST: SC-004
+[2026-05-10T02:23:58.371Z] ================================================================================
+[2026-05-10T02:23:58.373Z] Navigate: Books 
+[2026-05-10T02:23:58.374Z] Waiting for Top menu: Books to be visible
+[2026-05-10T02:23:58.385Z] Top menu: Books is visible
+[2026-05-10T02:23:58.385Z] Clicking element: Top menu: Books
+[2026-05-10T02:23:58.386Z] Waiting for Top menu: Books to be clickable
+[2026-05-10T02:23:58.386Z] Waiting for Top menu: Books to be visible
+[2026-05-10T02:23:58.396Z] Top menu: Books is visible
+[2026-05-10T02:23:58.424Z] Top menu: Books is clickable
+[2026-05-10T02:23:59.712Z] Add to cart: First Prize Pies
+[2026-05-10T02:23:59.713Z] Clicking element: Add button: First Prize Pies
+[2026-05-10T02:23:59.714Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-10T02:23:59.715Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-10T02:23:59.776Z] Add button: First Prize Pies is visible
+[2026-05-10T02:23:59.797Z] Add button: First Prize Pies is clickable
+[2026-05-10T02:23:59.836Z] Add to cart: First Prize Pies
+[2026-05-10T02:23:59.837Z] Clicking element: Add button: First Prize Pies
+[2026-05-10T02:23:59.839Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-10T02:23:59.842Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-10T02:23:59.854Z] Add button: First Prize Pies is visible
+[2026-05-10T02:23:59.864Z] Add button: First Prize Pies is clickable
+[2026-05-10T02:23:59.898Z] Navigating to https://demo.nopcommerce.com/cart
+[2026-05-10T02:24:08.096Z] ================================================================================
+[2026-05-10T02:24:08.099Z] ===== END CART TEST =====
+[2026-05-10T02:24:08.102Z] ================================================================================

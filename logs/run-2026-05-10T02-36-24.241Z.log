@@ -1,0 +1,59 @@
+[2026-05-10T02:36:24.282Z] ================================================================================
+[2026-05-10T02:36:24.283Z] ===== START CART TEST =====
+[2026-05-10T02:36:24.284Z] ================================================================================
+[2026-05-10T02:36:24.864Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-10T02:36:24.865Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-10T02:36:25.290Z] Waiting for Search Input to be visible
+[2026-05-10T02:36:30.354Z] Search Input is visible
+[2026-05-10T02:36:30.355Z] ================================================================================
+[2026-05-10T02:36:30.356Z] RUN TEST: SC-016
+[2026-05-10T02:36:30.357Z] ================================================================================
+[2026-05-10T02:36:30.358Z] Navigate: Computers > Notebooks
+[2026-05-10T02:36:30.359Z] Waiting for Top menu: Computers to be visible
+[2026-05-10T02:36:30.369Z] Top menu: Computers is visible
+[2026-05-10T02:36:30.612Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-10T02:36:30.620Z] Sub menu: Notebooks is visible
+[2026-05-10T02:36:30.621Z] Clicking element: Sub menu: Notebooks
+[2026-05-10T02:36:30.621Z] Waiting for Sub menu: Notebooks to be clickable
+[2026-05-10T02:36:30.622Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-10T02:36:30.628Z] Sub menu: Notebooks is visible
+[2026-05-10T02:36:30.636Z] Sub menu: Notebooks is clickable
+[2026-05-10T02:36:31.737Z] Open product: Asus Laptop
+[2026-05-10T02:36:31.741Z] Clicking element: Product title
+[2026-05-10T02:36:31.744Z] Waiting for Product title to be clickable
+[2026-05-10T02:36:31.746Z] Waiting for Product title to be visible
+[2026-05-10T02:36:31.868Z] Product title is visible
+[2026-05-10T02:36:31.873Z] Product title is clickable
+[2026-05-10T02:36:32.582Z] Add to cart from product detail
+[2026-05-10T02:36:32.584Z] Clicking element: Add to cart button
+[2026-05-10T02:36:32.584Z] Waiting for Add to cart button to be clickable
+[2026-05-10T02:36:32.585Z] Waiting for Add to cart button to be visible
+[2026-05-10T02:36:32.620Z] Add to cart button is visible
+[2026-05-10T02:36:32.633Z] Add to cart button is clickable
+[2026-05-10T02:36:32.902Z] Inputting "5000" into element: Quantity input
+[2026-05-10T02:36:32.905Z] Waiting for Quantity input to be visible
+[2026-05-10T02:36:32.916Z] Quantity input is visible
+[2026-05-10T02:36:32.962Z] Add to cart from product detail
+[2026-05-10T02:36:32.963Z] Clicking element: Add to cart button
+[2026-05-10T02:36:32.964Z] Waiting for Add to cart button to be clickable
+[2026-05-10T02:36:32.965Z] Waiting for Add to cart button to be visible
+[2026-05-10T02:36:32.969Z] Add to cart button is visible
+[2026-05-10T02:36:32.976Z] Add to cart button is clickable
+[2026-05-10T02:36:33.237Z] Verify success notification
+[2026-05-10T02:36:33.238Z] Waiting for success notification to be visible
+[2026-05-10T02:36:33.249Z] success notification is visible
+[2026-05-10T02:36:33.866Z] Inputting "6000" into element: Quantity input
+[2026-05-10T02:36:33.866Z] Waiting for Quantity input to be visible
+[2026-05-10T02:36:33.940Z] Quantity input is visible
+[2026-05-10T02:36:33.995Z] Add to cart from product detail
+[2026-05-10T02:36:33.996Z] Clicking element: Add to cart button
+[2026-05-10T02:36:33.997Z] Waiting for Add to cart button to be clickable
+[2026-05-10T02:36:33.998Z] Waiting for Add to cart button to be visible
+[2026-05-10T02:36:34.006Z] Add to cart button is visible
+[2026-05-10T02:36:34.011Z] Add to cart button is clickable
+[2026-05-10T02:36:34.254Z] Verify error notification
+[2026-05-10T02:36:34.257Z] Waiting for error notification to be visible
+[2026-05-10T02:36:34.272Z] error notification is visible
+[2026-05-10T02:36:34.351Z] ================================================================================
+[2026-05-10T02:36:34.353Z] ===== END CART TEST =====
+[2026-05-10T02:36:34.357Z] ================================================================================

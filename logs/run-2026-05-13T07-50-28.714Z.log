@@ -1,0 +1,41 @@
+[2026-05-13T07:50:28.755Z] ================================================================================
+[2026-05-13T07:50:28.756Z] ===== START CART TEST =====
+[2026-05-13T07:50:28.757Z] ================================================================================
+[2026-05-13T07:50:29.342Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:50:29.343Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:50:30.543Z] Waiting for Search Input to be visible
+[2026-05-13T07:50:30.611Z] Search Input is visible
+[2026-05-13T07:50:30.614Z] ================================================================================
+[2026-05-13T07:50:30.618Z] RUN TEST: SC-020
+[2026-05-13T07:50:30.619Z] ================================================================================
+[2026-05-13T07:50:30.625Z] Navigate: Jewelry 
+[2026-05-13T07:50:30.627Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:50:30.808Z] Top menu: Jewelry is visible
+[2026-05-13T07:50:30.810Z] Clicking element: Top menu: Jewelry
+[2026-05-13T07:50:30.812Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-13T07:50:30.814Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:50:31.004Z] Top menu: Jewelry is visible
+[2026-05-13T07:50:31.028Z] Top menu: Jewelry is clickable
+[2026-05-13T07:50:32.161Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-13T07:50:32.162Z] Clicking element: Product title
+[2026-05-13T07:50:32.164Z] Waiting for Product title to be clickable
+[2026-05-13T07:50:32.165Z] Waiting for Product title to be visible
+[2026-05-13T07:50:32.223Z] Product title is visible
+[2026-05-13T07:50:32.235Z] Product title is clickable
+[2026-05-13T07:50:33.885Z] Inputting "05/13/2026" into element: Rent start date
+[2026-05-13T07:50:33.886Z] Waiting for Rent start date to be visible
+[2026-05-13T07:50:33.917Z] Rent start date is visible
+[2026-05-13T07:50:33.974Z] Inputting "05/14/2026" into element: Rent end date
+[2026-05-13T07:50:33.975Z] Waiting for Rent end date to be visible
+[2026-05-13T07:50:33.991Z] Rent end date is visible
+[2026-05-13T07:50:34.033Z] Add to cart from product detail
+[2026-05-13T07:50:34.034Z] Clicking element: Add to cart button
+[2026-05-13T07:50:34.034Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:50:34.034Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:50:34.051Z] Add to cart button is visible
+[2026-05-13T07:50:34.062Z] Add to cart button is clickable
+[2026-05-13T07:50:34.350Z] Verify success notification
+[2026-05-13T07:50:34.351Z] Waiting for success notification to be visible
+[2026-05-13T07:50:49.739Z] ================================================================================
+[2026-05-13T07:50:49.741Z] ===== END CART TEST =====
+[2026-05-13T07:50:49.745Z] ================================================================================

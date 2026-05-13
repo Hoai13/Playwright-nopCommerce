@@ -1,0 +1,50 @@
+[2026-05-10T02:28:30.095Z] ================================================================================
+[2026-05-10T02:28:30.096Z] ===== START CART TEST =====
+[2026-05-10T02:28:30.097Z] ================================================================================
+[2026-05-10T02:28:30.684Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-10T02:28:30.686Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-10T02:28:31.229Z] Waiting for Search Input to be visible
+[2026-05-10T02:28:36.593Z] Search Input is visible
+[2026-05-10T02:28:36.597Z] ================================================================================
+[2026-05-10T02:28:36.597Z] RUN TEST: SC-004
+[2026-05-10T02:28:36.598Z] ================================================================================
+[2026-05-10T02:28:36.601Z] Navigate: Books 
+[2026-05-10T02:28:36.603Z] Waiting for Top menu: Books to be visible
+[2026-05-10T02:28:36.617Z] Top menu: Books is visible
+[2026-05-10T02:28:36.618Z] Clicking element: Top menu: Books
+[2026-05-10T02:28:36.619Z] Waiting for Top menu: Books to be clickable
+[2026-05-10T02:28:36.620Z] Waiting for Top menu: Books to be visible
+[2026-05-10T02:28:36.632Z] Top menu: Books is visible
+[2026-05-10T02:28:36.651Z] Top menu: Books is clickable
+[2026-05-10T02:28:37.624Z] Add to cart: First Prize Pies
+[2026-05-10T02:28:37.625Z] Clicking element: Add button: First Prize Pies
+[2026-05-10T02:28:37.625Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-10T02:28:37.626Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-10T02:28:37.703Z] Add button: First Prize Pies is visible
+[2026-05-10T02:28:37.726Z] Add button: First Prize Pies is clickable
+[2026-05-10T02:28:37.756Z] Verify success notification
+[2026-05-10T02:28:37.759Z] Waiting for success notification to be visible
+[2026-05-10T02:28:38.148Z] success notification is visible
+[2026-05-10T02:28:38.167Z] Clicking element: Close Notification
+[2026-05-10T02:28:38.167Z] Waiting for Close Notification to be clickable
+[2026-05-10T02:28:38.168Z] Waiting for Close Notification to be visible
+[2026-05-10T02:28:38.177Z] Close Notification is visible
+[2026-05-10T02:28:38.189Z] Close Notification is clickable
+[2026-05-10T02:28:38.236Z] Add to cart: First Prize Pies
+[2026-05-10T02:28:38.237Z] Clicking element: Add button: First Prize Pies
+[2026-05-10T02:28:38.237Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-10T02:28:38.238Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-10T02:28:38.246Z] Add button: First Prize Pies is visible
+[2026-05-10T02:28:38.263Z] Add button: First Prize Pies is clickable
+[2026-05-10T02:28:38.305Z] Verify success notification
+[2026-05-10T02:28:38.305Z] Waiting for success notification to be visible
+[2026-05-10T02:28:38.312Z] success notification is visible
+[2026-05-10T02:28:38.329Z] Clicking element: Close Notification
+[2026-05-10T02:28:38.331Z] Waiting for Close Notification to be clickable
+[2026-05-10T02:28:38.333Z] Waiting for Close Notification to be visible
+[2026-05-10T02:28:38.344Z] Close Notification is visible
+[2026-05-10T02:28:38.362Z] Close Notification is clickable
+[2026-05-10T02:28:38.398Z] Navigating to https://demo.nopcommerce.com/cart
+[2026-05-10T02:28:39.238Z] ================================================================================
+[2026-05-10T02:28:39.240Z] ===== END CART TEST =====
+[2026-05-10T02:28:39.241Z] ================================================================================

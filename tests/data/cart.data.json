@@ -1,0 +1,95 @@
+{
+  "URLS": {
+    "HOME": "https://demo.nopcommerce.com/",
+    "CART": "https://demo.nopcommerce.com/cart"
+  },
+
+  "PRODUCTS": {
+    "BOOK_SIMPLE": "First Prize Pies",
+    "DESKTOP_CONFIGURABLE": "Build your own computer",
+    "NOTEBOOK": "Asus Laptop",
+    "RENTAL": "Elegant Gemstone Necklace (rental)",
+    "DONATION": "If You Wait (donation)"
+  },
+
+  "CATEGORIES": {
+    "BOOKS": ["Books"],
+    "DESKTOPS": ["Computers", "Desktops"],
+    "NOTEBOOKS": ["Computers", "Notebooks"],
+    "JEWELRY": ["Jewelry"],
+    "DIGITAL_DOWNLOADS": ["Digital downloads"]
+  },
+
+  "MESSAGES": {
+    "ADD_SUCCESS": "The product has been added",
+    "EMPTY_MINI_CART": "You have no items in your shopping cart.",
+    "MAX_QTY": "maximum quantity allowed for purchase is 10000",
+    "QTY_POSITIVE": "Quantity should be positive",
+    "RENT_START_LT_END": "Rental start date should be less than end date",
+    "RENT_FUTURE_DATE": "Rental start date should be the future date",
+    "RENT_ENTER_START": "Enter rental start date",
+    "PRICE_RANGE": "The price must be from",
+    "REQUIRED_OPTION_URL": "build-your-own-computer"
+  },
+
+  "TEST_VALUES": {
+    "DUPLICATE_EXPECTED_QTY": "2",
+    "INVALID_DATE": "31/12/2026",
+    "NON_NUMERIC_DATE": "abc"
+  },
+
+  "CASES": {
+    "ADD_TO_CART": [
+      { "id": "SC-001", "description": "Add simple product to cart successfully", "tags": ["smoke", "positive"], "input": { "product": "BOOK_SIMPLE", "category": "BOOKS" }, "expected": { "status": "success", "notification": "ADD_SUCCESS", "miniCartCountGreaterThanZero": true } },
+      { "id": "SC-002", "description": "Increase quantity when adding duplicate product", "tags": ["cart", "quantity"], "input": { "product": "BOOK_SIMPLE", "category": "BOOKS", "repeat": 2 }, "expected": { "status": "success", "notification": "ADD_SUCCESS", "cartItemCount": 1, "cartQuantity": "2" } },
+      { "id": "SC-003", "description": "Redirect to detail page when required options are missing", "tags": ["validation", "product-option"], "input": { "product": "DESKTOP_CONFIGURABLE", "category": "DESKTOPS" }, "expected": { "status": "error", "urlContains": "REQUIRED_OPTION_URL" } },
+      { "id": "SC-004", "description": "Add configurable product with required options", "tags": ["smoke", "configurable"], "input": { "product": "DESKTOP_CONFIGURABLE", "category": "DESKTOPS", "configuration": {"ram": "8GB [+$60.00]", "hdd": "320 GB [+$60.00]" } }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-005", "description": "Update configurable product price dynamically", "tags": ["configurable", "price"], "input": { "product": "DESKTOP_CONFIGURABLE", "category": "DESKTOPS", "configuration": { "ram": "8GB [+$60.00]", "hdd": "400 GB [+$100.00]"} }, "expected": { "status": "success", "priceChanged": true } },
+      { "id": "SC-006", "description": "Display selected configuration correctly in cart", "tags": ["cart", "configurable"], "input": { "product": "DESKTOP_CONFIGURABLE", "category": "DESKTOPS", "configuration": { "ram": "8GB [+$60.00]", "hdd": "400 GB [+$100.00]" } }, "expected": { "status": "success", "containsConfiguration": true } },
+      { "id": "SC-007", "description": "Create separate rows for different configurations", "tags": ["cart", "configurable"], "input": { "product": "DESKTOP_CONFIGURABLE", "category": "DESKTOPS", "configurations": [{ "ram": "8GB [+$60.00]", "hdd": "320 GB [+$60.00]" }, { "ram": "16GB [+$120.00]", "hdd": "400 GB [+$100.00]" }] }, "expected": { "status": "success", "cartItemCount": 2 } }
+    ],
+
+    "QUANTITY_VALIDATION": [
+      { "id": "SC-008", "description": "Accept minimum quantity", "tags": ["boundary", "positive"], "input": { "value": "1" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-009", "description": "Accept near lower boundary quantity", "tags": ["boundary"], "input": { "value": "2" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-010", "description": "Accept valid mid-range quantity", "tags": ["positive"], "input": { "value": "5000" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-011", "description": "Accept near upper boundary quantity", "tags": ["boundary"], "input": { "value": "9999" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-012", "description": "Accept maximum quantity", "tags": ["boundary"], "input": { "value": "10000" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-013", "description": "Reject quantity exceeding maximum limit", "tags": ["boundary", "negative"], "input": { "value": "10001" }, "expected": { "status": "error", "messageKey": "MAX_QTY" } },
+      { "id": "SC-014", "description": "Reject zero quantity", "tags": ["negative", "validation"], "input": { "value": "0" }, "expected": { "status": "error", "messageKey": "QTY_POSITIVE" } },
+      { "id": "SC-015", "description": "Reject negative quantity", "tags": ["negative", "validation"], "input": { "value": "-5" }, "expected": { "status": "error", "messageKey": "QTY_POSITIVE" } },
+      { "id": "SC-016", "description": "Reject decimal quantity", "tags": ["negative", "validation"], "input": { "value": "10.5" }, "expected": { "status": "error", "messageKey": "QTY_POSITIVE" } },
+      { "id": "SC-017", "description": "Reject non-numeric quantity", "tags": ["negative", "validation"], "input": { "value": "abc" }, "expected": { "status": "error", "messageKey": "QTY_POSITIVE" } },
+      { "id": "SC-018", "description": "Reject empty quantity", "tags": ["negative", "validation"], "input": { "value": "" }, "expected": { "status": "error", "messageKey": "QTY_POSITIVE" } },
+      { "id": "SC-019", "description": "Enforce total cart quantity limit", "tags": ["boundary", "cart-limit"], "input": { "firstQty": "6000", "secondQty": "5000" }, "expected": { "status": "error", "messageKey": "MAX_QTY" } }
+    ],
+
+    "RENTAL_VALIDATION": [
+      { "id": "SC-020", "description": "Accept valid rental date range", "tags": ["positive"], "input": { "value": "valid" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-021", "description": "Accept same-day rental", "tags": ["boundary"], "input": { "value": "same_day" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-022", "description": "Reject start date greater than end date", "tags": ["negative", "validation"], "input": { "value": "start_gt_end" }, "expected": { "status": "error", "messageKey": "RENT_START_LT_END" } },
+      { "id": "SC-023", "description": "Reject past rental date", "tags": ["negative", "validation"], "input": { "value": "past" }, "expected": { "status": "error", "messageKey": "RENT_FUTURE_DATE" } },
+      { "id": "SC-024", "description": "Reject empty rental dates", "tags": ["negative", "validation"], "input": { "value": "empty" }, "expected": { "status": "error", "messageKey": "RENT_ENTER_START" } },
+      { "id": "SC-025", "description": "Reject invalid rental date format", "tags": ["negative", "validation"], "input": { "value": "invalid_format" }, "expected": { "status": "error", "messageKey": "RENT_ENTER_START" } },
+      { "id": "SC-026", "description": "Reject non-numeric rental dates", "tags": ["negative", "validation"], "input": { "value": "non_numeric" }, "expected": { "status": "error", "messageKey": "RENT_ENTER_START" } }
+    ],
+
+    "DONATION_VALIDATION": [
+      { "id": "SC-027", "description": "Accept minimum valid donation price", "tags": ["boundary", "positive"], "input": { "value": "0.50" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-028", "description": "Accept valid above minimum donation price", "tags": ["boundary"], "input": { "value": "0.51" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-029", "description": "Reject donation price below minimum", "tags": ["negative", "boundary"], "input": { "value": "0.49" }, "expected": { "status": "error", "messageKey": "PRICE_RANGE" } },
+      { "id": "SC-030", "description": "Accept valid mid-range donation price", "tags": ["positive"], "input": { "value": "50.00" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-031", "description": "Accept maximum donation price", "tags": ["boundary"], "input": { "value": "100.00" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-032", "description": "Accept below maximum valid donation price", "tags": ["boundary"], "input": { "value": "99.99" }, "expected": { "status": "success", "notification": "ADD_SUCCESS" } },
+      { "id": "SC-033", "description": "Reject donation price above maximum", "tags": ["negative", "boundary"], "input": { "value": "101.00" }, "expected": { "status": "error", "messageKey": "PRICE_RANGE" } },
+      { "id": "SC-034", "description": "Reject non-numeric donation price", "tags": ["negative", "validation"], "input": { "value": "abc" }, "expected": { "status": "error", "messageKey": "PRICE_RANGE" } },
+      { "id": "SC-035", "description": "Reject empty donation price", "tags": ["negative", "validation"], "input": { "value": "" }, "expected": { "status": "error", "messageKey": "PRICE_RANGE" } }
+    ],
+
+    "CART_MANAGEMENT": [
+      { "id": "SC-036", "description": "Update shopping cart quantity successfully", "tags": ["cart", "quantity"], "input": { "oldQty": "1", "newQty": "3" }, "expected": { "status": "success", "cartQuantity": "3" } },
+      { "id": "SC-037", "description": "Recalculate subtotal and total after quantity update", "tags": ["cart", "subtotal"], "input": { "oldQty": "1", "newQty": "5" }, "expected": { "status": "success", "subtotalUpdated": true } },
+      { "id": "SC-038", "description": "Remove product from shopping cart successfully", "tags": ["cart", "remove"], "input": { "product": "BOOK_SIMPLE" }, "expected": { "status": "success", "cartEmpty": true } }
+    ]
+  }
+}

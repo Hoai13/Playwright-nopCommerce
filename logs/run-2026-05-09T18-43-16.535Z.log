@@ -1,0 +1,57 @@
+[2026-05-09T18:43:16.585Z] ================================================================================
+[2026-05-09T18:43:16.586Z] ===== START CART TEST =====
+[2026-05-09T18:43:16.587Z] ================================================================================
+[2026-05-09T18:43:17.315Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-09T18:43:17.317Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-09T18:43:17.925Z] Waiting for Search Input to be visible
+[2026-05-09T18:43:24.168Z] Search Input is visible
+[2026-05-09T18:43:24.172Z] ================================================================================
+[2026-05-09T18:43:24.175Z] RUN TEST: SC-003
+[2026-05-09T18:43:24.177Z] ================================================================================
+[2026-05-09T18:43:24.183Z] Navigate: Computers > Desktops
+[2026-05-09T18:43:24.185Z] Waiting for Top menu: Computers to be visible
+[2026-05-09T18:43:24.225Z] Top menu: Computers is visible
+[2026-05-09T18:43:24.460Z] Waiting for Sub menu: Desktops to be visible
+[2026-05-09T18:43:24.487Z] Sub menu: Desktops is visible
+[2026-05-09T18:43:24.488Z] Clicking element: Sub menu: Desktops
+[2026-05-09T18:43:24.490Z] Waiting for Sub menu: Desktops to be clickable
+[2026-05-09T18:43:24.491Z] Waiting for Sub menu: Desktops to be visible
+[2026-05-09T18:43:24.509Z] Sub menu: Desktops is visible
+[2026-05-09T18:43:24.526Z] Sub menu: Desktops is clickable
+[2026-05-09T18:43:26.047Z] Add to cart: Build your own computer
+[2026-05-09T18:43:26.049Z] Clicking element: Add button: Build your own computer
+[2026-05-09T18:43:26.050Z] Waiting for Add button: Build your own computer to be clickable
+[2026-05-09T18:43:26.051Z] Waiting for Add button: Build your own computer to be visible
+[2026-05-09T18:43:26.101Z] Add button: Build your own computer is visible
+[2026-05-09T18:43:26.120Z] Add button: Build your own computer is clickable
+[2026-05-09T18:43:28.281Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-09T18:43:28.283Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-09T18:43:28.800Z] Waiting for Search Input to be visible
+[2026-05-09T18:43:34.855Z] Search Input is visible
+[2026-05-09T18:43:34.862Z] ================================================================================
+[2026-05-09T18:43:34.865Z] RUN TEST: SC-004
+[2026-05-09T18:43:34.868Z] ================================================================================
+[2026-05-09T18:43:34.871Z] Navigate: Books 
+[2026-05-09T18:43:34.874Z] Waiting for Top menu: Books to be visible
+[2026-05-09T18:43:34.926Z] Top menu: Books is visible
+[2026-05-09T18:43:34.930Z] Clicking element: Top menu: Books
+[2026-05-09T18:43:34.932Z] Waiting for Top menu: Books to be clickable
+[2026-05-09T18:43:34.933Z] Waiting for Top menu: Books to be visible
+[2026-05-09T18:43:35.128Z] Top menu: Books is visible
+[2026-05-09T18:43:35.518Z] Top menu: Books is clickable
+[2026-05-09T18:43:36.352Z] Add to cart: First Prize Pies
+[2026-05-09T18:43:36.355Z] Clicking element: Add button: First Prize Pies
+[2026-05-09T18:43:36.356Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-09T18:43:36.356Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-09T18:43:36.392Z] Add button: First Prize Pies is visible
+[2026-05-09T18:43:36.412Z] Add button: First Prize Pies is clickable
+[2026-05-09T18:43:36.453Z] Add to cart: First Prize Pies
+[2026-05-09T18:43:36.455Z] Clicking element: Add button: First Prize Pies
+[2026-05-09T18:43:36.459Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-09T18:43:36.461Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-09T18:43:36.516Z] Add button: First Prize Pies is visible
+[2026-05-09T18:43:36.552Z] Add button: First Prize Pies is clickable
+[2026-05-09T18:43:36.631Z] Navigating to https://demo.nopcommerce.com/cart
+[2026-05-09T18:43:48.586Z] ================================================================================
+[2026-05-09T18:43:48.593Z] ===== END CART TEST =====
+[2026-05-09T18:43:48.597Z] ================================================================================

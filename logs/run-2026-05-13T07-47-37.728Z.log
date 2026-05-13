@@ -1,0 +1,23 @@
+[2026-05-13T07:47:37.771Z] ================================================================================
+[2026-05-13T07:47:37.772Z] ===== START CART TEST =====
+[2026-05-13T07:47:37.773Z] ================================================================================
+[2026-05-13T07:47:38.307Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:47:38.309Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:47:39.569Z] Waiting for Search Input to be visible
+[2026-05-13T07:47:39.707Z] Search Input is visible
+[2026-05-13T07:47:39.710Z] ================================================================================
+[2026-05-13T07:47:39.711Z] RUN TEST: SC-010
+[2026-05-13T07:47:39.712Z] ================================================================================
+[2026-05-13T07:47:39.717Z] Navigate: Computers > Notebooks
+[2026-05-13T07:47:39.719Z] Waiting for Top menu: Computers to be visible
+[2026-05-13T07:47:39.827Z] Top menu: Computers is visible
+[2026-05-13T07:47:39.956Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-13T07:47:39.994Z] Sub menu: Notebooks is visible
+[2026-05-13T07:47:39.995Z] Clicking element: Sub menu: Notebooks
+[2026-05-13T07:47:39.996Z] Waiting for Sub menu: Notebooks to be clickable
+[2026-05-13T07:47:39.997Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-13T07:47:40.055Z] Sub menu: Notebooks is visible
+[2026-05-13T07:47:40.081Z] Sub menu: Notebooks is clickable
+[2026-05-13T07:48:08.375Z] ================================================================================
+[2026-05-13T07:48:08.377Z] ===== END CART TEST =====
+[2026-05-13T07:48:08.379Z] ================================================================================

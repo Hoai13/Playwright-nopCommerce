@@ -1,0 +1,570 @@
+[2026-05-13T07:50:51.123Z] ================================================================================
+[2026-05-13T07:50:51.125Z] ===== START CART TEST =====
+[2026-05-13T07:50:51.126Z] ================================================================================
+[2026-05-13T07:50:51.707Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:50:51.709Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:50:53.238Z] Waiting for Search Input to be visible
+[2026-05-13T07:50:53.377Z] Search Input is visible
+[2026-05-13T07:50:53.378Z] ================================================================================
+[2026-05-13T07:50:53.378Z] RUN TEST: SC-021
+[2026-05-13T07:50:53.379Z] ================================================================================
+[2026-05-13T07:50:53.382Z] Navigate: Jewelry 
+[2026-05-13T07:50:53.383Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:50:53.397Z] Top menu: Jewelry is visible
+[2026-05-13T07:50:53.398Z] Clicking element: Top menu: Jewelry
+[2026-05-13T07:50:53.399Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-13T07:50:53.399Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:50:53.412Z] Top menu: Jewelry is visible
+[2026-05-13T07:50:53.428Z] Top menu: Jewelry is clickable
+[2026-05-13T07:50:54.329Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-13T07:50:54.330Z] Clicking element: Product title
+[2026-05-13T07:50:54.332Z] Waiting for Product title to be clickable
+[2026-05-13T07:50:54.334Z] Waiting for Product title to be visible
+[2026-05-13T07:50:54.364Z] Product title is visible
+[2026-05-13T07:50:54.385Z] Product title is clickable
+[2026-05-13T07:50:55.179Z] Inputting "05/13/2026" into element: Rent start date
+[2026-05-13T07:50:55.181Z] Waiting for Rent start date to be visible
+[2026-05-13T07:50:55.251Z] Rent start date is visible
+[2026-05-13T07:50:55.386Z] Inputting "05/13/2026" into element: Rent end date
+[2026-05-13T07:50:55.387Z] Waiting for Rent end date to be visible
+[2026-05-13T07:50:55.421Z] Rent end date is visible
+[2026-05-13T07:50:55.549Z] Add to cart from product detail
+[2026-05-13T07:50:55.550Z] Clicking element: Add to cart button
+[2026-05-13T07:50:55.551Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:50:55.551Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:50:55.574Z] Add to cart button is visible
+[2026-05-13T07:50:55.589Z] Add to cart button is clickable
+[2026-05-13T07:50:55.893Z] Verify success notification
+[2026-05-13T07:50:55.895Z] Waiting for success notification to be visible
+[2026-05-13T07:50:56.074Z] success notification is visible
+[2026-05-13T07:50:57.297Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:50:57.299Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:50:58.615Z] Waiting for Search Input to be visible
+[2026-05-13T07:50:58.784Z] Search Input is visible
+[2026-05-13T07:50:58.784Z] ================================================================================
+[2026-05-13T07:50:58.785Z] RUN TEST: SC-022
+[2026-05-13T07:50:58.785Z] ================================================================================
+[2026-05-13T07:50:58.786Z] Navigate: Jewelry 
+[2026-05-13T07:50:58.787Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:50:58.797Z] Top menu: Jewelry is visible
+[2026-05-13T07:50:58.798Z] Clicking element: Top menu: Jewelry
+[2026-05-13T07:50:58.798Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-13T07:50:58.799Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:50:58.809Z] Top menu: Jewelry is visible
+[2026-05-13T07:50:58.819Z] Top menu: Jewelry is clickable
+[2026-05-13T07:50:59.711Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-13T07:50:59.711Z] Clicking element: Product title
+[2026-05-13T07:50:59.711Z] Waiting for Product title to be clickable
+[2026-05-13T07:50:59.712Z] Waiting for Product title to be visible
+[2026-05-13T07:50:59.734Z] Product title is visible
+[2026-05-13T07:50:59.757Z] Product title is clickable
+[2026-05-13T07:51:00.629Z] Inputting "05/14/2026" into element: Rent start date
+[2026-05-13T07:51:00.631Z] Waiting for Rent start date to be visible
+[2026-05-13T07:51:00.689Z] Rent start date is visible
+[2026-05-13T07:51:00.823Z] Inputting "05/13/2026" into element: Rent end date
+[2026-05-13T07:51:00.824Z] Waiting for Rent end date to be visible
+[2026-05-13T07:51:00.852Z] Rent end date is visible
+[2026-05-13T07:51:00.930Z] Add to cart from product detail
+[2026-05-13T07:51:00.930Z] Clicking element: Add to cart button
+[2026-05-13T07:51:00.931Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:00.931Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:00.949Z] Add to cart button is visible
+[2026-05-13T07:51:00.962Z] Add to cart button is clickable
+[2026-05-13T07:51:01.260Z] Verify error notification
+[2026-05-13T07:51:01.261Z] Waiting for error notification to be visible
+[2026-05-13T07:51:01.322Z] error notification is visible
+[2026-05-13T07:51:02.445Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:02.447Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:04.122Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:04.343Z] Search Input is visible
+[2026-05-13T07:51:04.345Z] ================================================================================
+[2026-05-13T07:51:04.345Z] RUN TEST: SC-023
+[2026-05-13T07:51:04.346Z] ================================================================================
+[2026-05-13T07:51:04.348Z] Navigate: Jewelry 
+[2026-05-13T07:51:04.350Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:51:04.368Z] Top menu: Jewelry is visible
+[2026-05-13T07:51:04.369Z] Clicking element: Top menu: Jewelry
+[2026-05-13T07:51:04.369Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-13T07:51:04.370Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:51:04.383Z] Top menu: Jewelry is visible
+[2026-05-13T07:51:04.394Z] Top menu: Jewelry is clickable
+[2026-05-13T07:51:05.258Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-13T07:51:05.259Z] Clicking element: Product title
+[2026-05-13T07:51:05.259Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:05.260Z] Waiting for Product title to be visible
+[2026-05-13T07:51:05.283Z] Product title is visible
+[2026-05-13T07:51:05.302Z] Product title is clickable
+[2026-05-13T07:51:06.282Z] Inputting "05/12/2026" into element: Rent start date
+[2026-05-13T07:51:06.282Z] Waiting for Rent start date to be visible
+[2026-05-13T07:51:06.326Z] Rent start date is visible
+[2026-05-13T07:51:06.385Z] Inputting "05/13/2026" into element: Rent end date
+[2026-05-13T07:51:06.386Z] Waiting for Rent end date to be visible
+[2026-05-13T07:51:06.453Z] Rent end date is visible
+[2026-05-13T07:51:06.583Z] Add to cart from product detail
+[2026-05-13T07:51:06.584Z] Clicking element: Add to cart button
+[2026-05-13T07:51:06.584Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:06.585Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:06.618Z] Add to cart button is visible
+[2026-05-13T07:51:06.647Z] Add to cart button is clickable
+[2026-05-13T07:51:07.012Z] Verify error notification
+[2026-05-13T07:51:07.013Z] Waiting for error notification to be visible
+[2026-05-13T07:51:07.176Z] error notification is visible
+[2026-05-13T07:51:08.422Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:08.424Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:09.837Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:09.993Z] Search Input is visible
+[2026-05-13T07:51:09.994Z] ================================================================================
+[2026-05-13T07:51:09.995Z] RUN TEST: SC-024
+[2026-05-13T07:51:09.995Z] ================================================================================
+[2026-05-13T07:51:09.996Z] Navigate: Jewelry 
+[2026-05-13T07:51:09.996Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:51:10.007Z] Top menu: Jewelry is visible
+[2026-05-13T07:51:10.008Z] Clicking element: Top menu: Jewelry
+[2026-05-13T07:51:10.008Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-13T07:51:10.009Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:51:10.018Z] Top menu: Jewelry is visible
+[2026-05-13T07:51:10.028Z] Top menu: Jewelry is clickable
+[2026-05-13T07:51:11.086Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-13T07:51:11.087Z] Clicking element: Product title
+[2026-05-13T07:51:11.088Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:11.089Z] Waiting for Product title to be visible
+[2026-05-13T07:51:11.119Z] Product title is visible
+[2026-05-13T07:51:11.138Z] Product title is clickable
+[2026-05-13T07:51:12.331Z] Inputting "" into element: Rent start date
+[2026-05-13T07:51:12.332Z] Waiting for Rent start date to be visible
+[2026-05-13T07:51:12.416Z] Rent start date is visible
+[2026-05-13T07:51:12.587Z] Inputting "" into element: Rent end date
+[2026-05-13T07:51:12.588Z] Waiting for Rent end date to be visible
+[2026-05-13T07:51:12.614Z] Rent end date is visible
+[2026-05-13T07:51:12.695Z] Add to cart from product detail
+[2026-05-13T07:51:12.695Z] Clicking element: Add to cart button
+[2026-05-13T07:51:12.696Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:12.696Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:12.707Z] Add to cart button is visible
+[2026-05-13T07:51:12.718Z] Add to cart button is clickable
+[2026-05-13T07:51:13.018Z] Verify error notification
+[2026-05-13T07:51:13.020Z] Waiting for error notification to be visible
+[2026-05-13T07:51:13.930Z] error notification is visible
+[2026-05-13T07:51:15.149Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:15.150Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:16.408Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:16.608Z] Search Input is visible
+[2026-05-13T07:51:16.609Z] ================================================================================
+[2026-05-13T07:51:16.610Z] RUN TEST: SC-025
+[2026-05-13T07:51:16.610Z] ================================================================================
+[2026-05-13T07:51:16.612Z] Navigate: Jewelry 
+[2026-05-13T07:51:16.613Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:51:16.634Z] Top menu: Jewelry is visible
+[2026-05-13T07:51:16.634Z] Clicking element: Top menu: Jewelry
+[2026-05-13T07:51:16.635Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-13T07:51:16.635Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:51:16.705Z] Top menu: Jewelry is visible
+[2026-05-13T07:51:16.719Z] Top menu: Jewelry is clickable
+[2026-05-13T07:51:17.600Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-13T07:51:17.601Z] Clicking element: Product title
+[2026-05-13T07:51:17.602Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:17.602Z] Waiting for Product title to be visible
+[2026-05-13T07:51:17.626Z] Product title is visible
+[2026-05-13T07:51:17.648Z] Product title is clickable
+[2026-05-13T07:51:18.484Z] Inputting "31/12/2026" into element: Rent start date
+[2026-05-13T07:51:18.485Z] Waiting for Rent start date to be visible
+[2026-05-13T07:51:18.515Z] Rent start date is visible
+[2026-05-13T07:51:18.658Z] Inputting "31/12/2026" into element: Rent end date
+[2026-05-13T07:51:18.659Z] Waiting for Rent end date to be visible
+[2026-05-13T07:51:18.691Z] Rent end date is visible
+[2026-05-13T07:51:18.776Z] Add to cart from product detail
+[2026-05-13T07:51:18.778Z] Clicking element: Add to cart button
+[2026-05-13T07:51:18.779Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:18.780Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:18.793Z] Add to cart button is visible
+[2026-05-13T07:51:18.808Z] Add to cart button is clickable
+[2026-05-13T07:51:19.097Z] Verify error notification
+[2026-05-13T07:51:19.099Z] Waiting for error notification to be visible
+[2026-05-13T07:51:19.137Z] error notification is visible
+[2026-05-13T07:51:20.160Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:20.162Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:21.531Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:21.764Z] Search Input is visible
+[2026-05-13T07:51:21.765Z] ================================================================================
+[2026-05-13T07:51:21.766Z] RUN TEST: SC-026
+[2026-05-13T07:51:21.766Z] ================================================================================
+[2026-05-13T07:51:21.767Z] Navigate: Jewelry 
+[2026-05-13T07:51:21.768Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:51:21.834Z] Top menu: Jewelry is visible
+[2026-05-13T07:51:21.835Z] Clicking element: Top menu: Jewelry
+[2026-05-13T07:51:21.835Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-13T07:51:21.836Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-13T07:51:21.845Z] Top menu: Jewelry is visible
+[2026-05-13T07:51:21.858Z] Top menu: Jewelry is clickable
+[2026-05-13T07:51:22.719Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-13T07:51:22.719Z] Clicking element: Product title
+[2026-05-13T07:51:22.720Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:22.720Z] Waiting for Product title to be visible
+[2026-05-13T07:51:22.746Z] Product title is visible
+[2026-05-13T07:51:22.766Z] Product title is clickable
+[2026-05-13T07:51:23.600Z] Inputting "abc" into element: Rent start date
+[2026-05-13T07:51:23.602Z] Waiting for Rent start date to be visible
+[2026-05-13T07:51:23.641Z] Rent start date is visible
+[2026-05-13T07:51:23.770Z] Inputting "abc" into element: Rent end date
+[2026-05-13T07:51:23.771Z] Waiting for Rent end date to be visible
+[2026-05-13T07:51:23.802Z] Rent end date is visible
+[2026-05-13T07:51:23.881Z] Add to cart from product detail
+[2026-05-13T07:51:23.882Z] Clicking element: Add to cart button
+[2026-05-13T07:51:23.882Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:23.883Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:23.898Z] Add to cart button is visible
+[2026-05-13T07:51:23.911Z] Add to cart button is clickable
+[2026-05-13T07:51:24.192Z] Verify error notification
+[2026-05-13T07:51:24.193Z] Waiting for error notification to be visible
+[2026-05-13T07:51:25.122Z] error notification is visible
+[2026-05-13T07:51:26.282Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:26.283Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:27.698Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:27.802Z] Search Input is visible
+[2026-05-13T07:51:27.803Z] ================================================================================
+[2026-05-13T07:51:27.804Z] RUN TEST: SC-027
+[2026-05-13T07:51:27.804Z] ================================================================================
+[2026-05-13T07:51:27.805Z] Navigate: Digital downloads 
+[2026-05-13T07:51:27.806Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:27.817Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:27.818Z] Clicking element: Top menu: Digital downloads
+[2026-05-13T07:51:27.819Z] Waiting for Top menu: Digital downloads to be clickable
+[2026-05-13T07:51:27.819Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:27.828Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:27.840Z] Top menu: Digital downloads is clickable
+[2026-05-13T07:51:28.660Z] Open product: If You Wait (donation)
+[2026-05-13T07:51:28.661Z] Clicking element: Product title
+[2026-05-13T07:51:28.661Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:28.661Z] Waiting for Product title to be visible
+[2026-05-13T07:51:28.683Z] Product title is visible
+[2026-05-13T07:51:28.695Z] Product title is clickable
+[2026-05-13T07:51:29.586Z] Inputting "0.50" into element: Customer entered price
+[2026-05-13T07:51:29.587Z] Waiting for Customer entered price to be visible
+[2026-05-13T07:51:29.621Z] Customer entered price is visible
+[2026-05-13T07:51:29.724Z] Add to cart from product detail
+[2026-05-13T07:51:29.724Z] Clicking element: Add to cart button
+[2026-05-13T07:51:29.724Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:29.725Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:29.741Z] Add to cart button is visible
+[2026-05-13T07:51:29.756Z] Add to cart button is clickable
+[2026-05-13T07:51:30.051Z] Verify success notification
+[2026-05-13T07:51:30.052Z] Waiting for success notification to be visible
+[2026-05-13T07:51:30.177Z] success notification is visible
+[2026-05-13T07:51:31.242Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:31.243Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:32.563Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:32.599Z] Search Input is visible
+[2026-05-13T07:51:32.600Z] ================================================================================
+[2026-05-13T07:51:32.600Z] RUN TEST: SC-028
+[2026-05-13T07:51:32.600Z] ================================================================================
+[2026-05-13T07:51:32.601Z] Navigate: Digital downloads 
+[2026-05-13T07:51:32.602Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:32.620Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:32.620Z] Clicking element: Top menu: Digital downloads
+[2026-05-13T07:51:32.620Z] Waiting for Top menu: Digital downloads to be clickable
+[2026-05-13T07:51:32.621Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:32.636Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:32.653Z] Top menu: Digital downloads is clickable
+[2026-05-13T07:51:34.063Z] Open product: If You Wait (donation)
+[2026-05-13T07:51:34.065Z] Clicking element: Product title
+[2026-05-13T07:51:34.067Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:34.070Z] Waiting for Product title to be visible
+[2026-05-13T07:51:34.119Z] Product title is visible
+[2026-05-13T07:51:34.139Z] Product title is clickable
+[2026-05-13T07:51:35.340Z] Inputting "0.51" into element: Customer entered price
+[2026-05-13T07:51:35.343Z] Waiting for Customer entered price to be visible
+[2026-05-13T07:51:35.465Z] Customer entered price is visible
+[2026-05-13T07:51:35.526Z] Add to cart from product detail
+[2026-05-13T07:51:35.527Z] Clicking element: Add to cart button
+[2026-05-13T07:51:35.527Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:35.528Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:35.543Z] Add to cart button is visible
+[2026-05-13T07:51:35.554Z] Add to cart button is clickable
+[2026-05-13T07:51:35.820Z] Verify success notification
+[2026-05-13T07:51:35.821Z] Waiting for success notification to be visible
+[2026-05-13T07:51:35.940Z] success notification is visible
+[2026-05-13T07:51:37.054Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:37.056Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:38.372Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:38.653Z] Search Input is visible
+[2026-05-13T07:51:38.655Z] ================================================================================
+[2026-05-13T07:51:38.655Z] RUN TEST: SC-029
+[2026-05-13T07:51:38.656Z] ================================================================================
+[2026-05-13T07:51:38.657Z] Navigate: Digital downloads 
+[2026-05-13T07:51:38.658Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:38.741Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:38.741Z] Clicking element: Top menu: Digital downloads
+[2026-05-13T07:51:38.742Z] Waiting for Top menu: Digital downloads to be clickable
+[2026-05-13T07:51:38.742Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:38.766Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:38.778Z] Top menu: Digital downloads is clickable
+[2026-05-13T07:51:39.586Z] Open product: If You Wait (donation)
+[2026-05-13T07:51:39.587Z] Clicking element: Product title
+[2026-05-13T07:51:39.587Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:39.588Z] Waiting for Product title to be visible
+[2026-05-13T07:51:39.612Z] Product title is visible
+[2026-05-13T07:51:39.634Z] Product title is clickable
+[2026-05-13T07:51:40.543Z] Inputting "0.49" into element: Customer entered price
+[2026-05-13T07:51:40.543Z] Waiting for Customer entered price to be visible
+[2026-05-13T07:51:40.571Z] Customer entered price is visible
+[2026-05-13T07:51:40.675Z] Add to cart from product detail
+[2026-05-13T07:51:40.677Z] Clicking element: Add to cart button
+[2026-05-13T07:51:40.678Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:40.678Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:40.704Z] Add to cart button is visible
+[2026-05-13T07:51:40.715Z] Add to cart button is clickable
+[2026-05-13T07:51:40.983Z] Verify error notification
+[2026-05-13T07:51:40.984Z] Waiting for error notification to be visible
+[2026-05-13T07:51:41.116Z] error notification is visible
+[2026-05-13T07:51:42.134Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:42.136Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:43.498Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:43.655Z] Search Input is visible
+[2026-05-13T07:51:43.656Z] ================================================================================
+[2026-05-13T07:51:43.656Z] RUN TEST: SC-030
+[2026-05-13T07:51:43.657Z] ================================================================================
+[2026-05-13T07:51:43.657Z] Navigate: Digital downloads 
+[2026-05-13T07:51:43.658Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:43.668Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:43.669Z] Clicking element: Top menu: Digital downloads
+[2026-05-13T07:51:43.669Z] Waiting for Top menu: Digital downloads to be clickable
+[2026-05-13T07:51:43.669Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:43.680Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:43.786Z] Top menu: Digital downloads is clickable
+[2026-05-13T07:51:44.678Z] Open product: If You Wait (donation)
+[2026-05-13T07:51:44.680Z] Clicking element: Product title
+[2026-05-13T07:51:44.683Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:44.684Z] Waiting for Product title to be visible
+[2026-05-13T07:51:44.766Z] Product title is visible
+[2026-05-13T07:51:44.798Z] Product title is clickable
+[2026-05-13T07:51:45.594Z] Inputting "50.00" into element: Customer entered price
+[2026-05-13T07:51:45.594Z] Waiting for Customer entered price to be visible
+[2026-05-13T07:51:45.701Z] Customer entered price is visible
+[2026-05-13T07:51:45.778Z] Add to cart from product detail
+[2026-05-13T07:51:45.779Z] Clicking element: Add to cart button
+[2026-05-13T07:51:45.779Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:45.779Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:45.799Z] Add to cart button is visible
+[2026-05-13T07:51:45.813Z] Add to cart button is clickable
+[2026-05-13T07:51:46.106Z] Verify success notification
+[2026-05-13T07:51:46.108Z] Waiting for success notification to be visible
+[2026-05-13T07:51:46.238Z] success notification is visible
+[2026-05-13T07:51:47.301Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:47.302Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:48.634Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:48.788Z] Search Input is visible
+[2026-05-13T07:51:48.789Z] ================================================================================
+[2026-05-13T07:51:48.789Z] RUN TEST: SC-031
+[2026-05-13T07:51:48.790Z] ================================================================================
+[2026-05-13T07:51:48.791Z] Navigate: Digital downloads 
+[2026-05-13T07:51:48.791Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:48.801Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:48.802Z] Clicking element: Top menu: Digital downloads
+[2026-05-13T07:51:48.802Z] Waiting for Top menu: Digital downloads to be clickable
+[2026-05-13T07:51:48.802Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:48.813Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:48.827Z] Top menu: Digital downloads is clickable
+[2026-05-13T07:51:49.587Z] Open product: If You Wait (donation)
+[2026-05-13T07:51:49.591Z] Clicking element: Product title
+[2026-05-13T07:51:49.593Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:49.595Z] Waiting for Product title to be visible
+[2026-05-13T07:51:49.661Z] Product title is visible
+[2026-05-13T07:51:49.677Z] Product title is clickable
+[2026-05-13T07:51:50.610Z] Inputting "100.00" into element: Customer entered price
+[2026-05-13T07:51:50.611Z] Waiting for Customer entered price to be visible
+[2026-05-13T07:51:50.644Z] Customer entered price is visible
+[2026-05-13T07:51:50.711Z] Add to cart from product detail
+[2026-05-13T07:51:50.711Z] Clicking element: Add to cart button
+[2026-05-13T07:51:50.712Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:50.712Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:50.726Z] Add to cart button is visible
+[2026-05-13T07:51:50.739Z] Add to cart button is clickable
+[2026-05-13T07:51:51.005Z] Verify success notification
+[2026-05-13T07:51:51.006Z] Waiting for success notification to be visible
+[2026-05-13T07:51:51.130Z] success notification is visible
+[2026-05-13T07:51:52.169Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:52.170Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:54.444Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:54.480Z] Search Input is visible
+[2026-05-13T07:51:54.482Z] ================================================================================
+[2026-05-13T07:51:54.484Z] RUN TEST: SC-032
+[2026-05-13T07:51:54.484Z] ================================================================================
+[2026-05-13T07:51:54.485Z] Navigate: Digital downloads 
+[2026-05-13T07:51:54.485Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:54.504Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:54.505Z] Clicking element: Top menu: Digital downloads
+[2026-05-13T07:51:54.505Z] Waiting for Top menu: Digital downloads to be clickable
+[2026-05-13T07:51:54.505Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:54.519Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:54.543Z] Top menu: Digital downloads is clickable
+[2026-05-13T07:51:55.559Z] Open product: If You Wait (donation)
+[2026-05-13T07:51:55.560Z] Clicking element: Product title
+[2026-05-13T07:51:55.560Z] Waiting for Product title to be clickable
+[2026-05-13T07:51:55.561Z] Waiting for Product title to be visible
+[2026-05-13T07:51:55.582Z] Product title is visible
+[2026-05-13T07:51:55.595Z] Product title is clickable
+[2026-05-13T07:51:56.496Z] Inputting "99.99" into element: Customer entered price
+[2026-05-13T07:51:56.499Z] Waiting for Customer entered price to be visible
+[2026-05-13T07:51:56.578Z] Customer entered price is visible
+[2026-05-13T07:51:56.637Z] Add to cart from product detail
+[2026-05-13T07:51:56.638Z] Clicking element: Add to cart button
+[2026-05-13T07:51:56.638Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:51:56.639Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:51:56.655Z] Add to cart button is visible
+[2026-05-13T07:51:56.672Z] Add to cart button is clickable
+[2026-05-13T07:51:56.949Z] Verify success notification
+[2026-05-13T07:51:56.950Z] Waiting for success notification to be visible
+[2026-05-13T07:51:57.077Z] success notification is visible
+[2026-05-13T07:51:58.164Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:51:58.164Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:51:59.414Z] Waiting for Search Input to be visible
+[2026-05-13T07:51:59.456Z] Search Input is visible
+[2026-05-13T07:51:59.457Z] ================================================================================
+[2026-05-13T07:51:59.458Z] RUN TEST: SC-033
+[2026-05-13T07:51:59.458Z] ================================================================================
+[2026-05-13T07:51:59.460Z] Navigate: Digital downloads 
+[2026-05-13T07:51:59.462Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:59.478Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:59.478Z] Clicking element: Top menu: Digital downloads
+[2026-05-13T07:51:59.479Z] Waiting for Top menu: Digital downloads to be clickable
+[2026-05-13T07:51:59.479Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:51:59.565Z] Top menu: Digital downloads is visible
+[2026-05-13T07:51:59.698Z] Top menu: Digital downloads is clickable
+[2026-05-13T07:52:00.580Z] Open product: If You Wait (donation)
+[2026-05-13T07:52:00.581Z] Clicking element: Product title
+[2026-05-13T07:52:00.581Z] Waiting for Product title to be clickable
+[2026-05-13T07:52:00.582Z] Waiting for Product title to be visible
+[2026-05-13T07:52:00.602Z] Product title is visible
+[2026-05-13T07:52:00.644Z] Product title is clickable
+[2026-05-13T07:52:01.510Z] Inputting "101.00" into element: Customer entered price
+[2026-05-13T07:52:01.510Z] Waiting for Customer entered price to be visible
+[2026-05-13T07:52:01.548Z] Customer entered price is visible
+[2026-05-13T07:52:01.635Z] Add to cart from product detail
+[2026-05-13T07:52:01.635Z] Clicking element: Add to cart button
+[2026-05-13T07:52:01.636Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:52:01.636Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:52:01.649Z] Add to cart button is visible
+[2026-05-13T07:52:01.664Z] Add to cart button is clickable
+[2026-05-13T07:52:01.935Z] Verify error notification
+[2026-05-13T07:52:01.937Z] Waiting for error notification to be visible
+[2026-05-13T07:52:02.083Z] error notification is visible
+[2026-05-13T07:52:03.068Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:52:03.068Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:52:04.679Z] Waiting for Search Input to be visible
+[2026-05-13T07:52:04.774Z] Search Input is visible
+[2026-05-13T07:52:04.775Z] ================================================================================
+[2026-05-13T07:52:04.776Z] RUN TEST: SC-034
+[2026-05-13T07:52:04.776Z] ================================================================================
+[2026-05-13T07:52:04.777Z] Navigate: Digital downloads 
+[2026-05-13T07:52:04.778Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:52:04.794Z] Top menu: Digital downloads is visible
+[2026-05-13T07:52:04.794Z] Clicking element: Top menu: Digital downloads
+[2026-05-13T07:52:04.795Z] Waiting for Top menu: Digital downloads to be clickable
+[2026-05-13T07:52:04.795Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:52:04.807Z] Top menu: Digital downloads is visible
+[2026-05-13T07:52:04.817Z] Top menu: Digital downloads is clickable
+[2026-05-13T07:52:05.623Z] Open product: If You Wait (donation)
+[2026-05-13T07:52:05.626Z] Clicking element: Product title
+[2026-05-13T07:52:05.629Z] Waiting for Product title to be clickable
+[2026-05-13T07:52:05.631Z] Waiting for Product title to be visible
+[2026-05-13T07:52:05.718Z] Product title is visible
+[2026-05-13T07:52:05.736Z] Product title is clickable
+[2026-05-13T07:52:06.776Z] Inputting "abc" into element: Customer entered price
+[2026-05-13T07:52:06.777Z] Waiting for Customer entered price to be visible
+[2026-05-13T07:52:06.825Z] Customer entered price is visible
+[2026-05-13T07:52:06.906Z] Add to cart from product detail
+[2026-05-13T07:52:06.907Z] Clicking element: Add to cart button
+[2026-05-13T07:52:06.907Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:52:06.907Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:52:06.922Z] Add to cart button is visible
+[2026-05-13T07:52:06.934Z] Add to cart button is clickable
+[2026-05-13T07:52:07.214Z] Verify error notification
+[2026-05-13T07:52:07.214Z] Waiting for error notification to be visible
+[2026-05-13T07:52:07.342Z] error notification is visible
+[2026-05-13T07:52:08.326Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:52:08.328Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:52:09.708Z] Waiting for Search Input to be visible
+[2026-05-13T07:52:09.801Z] Search Input is visible
+[2026-05-13T07:52:09.802Z] ================================================================================
+[2026-05-13T07:52:09.803Z] RUN TEST: SC-035
+[2026-05-13T07:52:09.803Z] ================================================================================
+[2026-05-13T07:52:09.804Z] Navigate: Digital downloads 
+[2026-05-13T07:52:09.805Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:52:09.816Z] Top menu: Digital downloads is visible
+[2026-05-13T07:52:09.817Z] Clicking element: Top menu: Digital downloads
+[2026-05-13T07:52:09.817Z] Waiting for Top menu: Digital downloads to be clickable
+[2026-05-13T07:52:09.818Z] Waiting for Top menu: Digital downloads to be visible
+[2026-05-13T07:52:09.826Z] Top menu: Digital downloads is visible
+[2026-05-13T07:52:09.834Z] Top menu: Digital downloads is clickable
+[2026-05-13T07:52:10.618Z] Open product: If You Wait (donation)
+[2026-05-13T07:52:10.620Z] Clicking element: Product title
+[2026-05-13T07:52:10.622Z] Waiting for Product title to be clickable
+[2026-05-13T07:52:10.624Z] Waiting for Product title to be visible
+[2026-05-13T07:52:10.684Z] Product title is visible
+[2026-05-13T07:52:10.694Z] Product title is clickable
+[2026-05-13T07:52:11.570Z] Inputting "" into element: Customer entered price
+[2026-05-13T07:52:11.574Z] Waiting for Customer entered price to be visible
+[2026-05-13T07:52:11.611Z] Customer entered price is visible
+[2026-05-13T07:52:11.683Z] Add to cart from product detail
+[2026-05-13T07:52:11.683Z] Clicking element: Add to cart button
+[2026-05-13T07:52:11.684Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:52:11.684Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:52:11.696Z] Add to cart button is visible
+[2026-05-13T07:52:11.709Z] Add to cart button is clickable
+[2026-05-13T07:52:11.977Z] Verify error notification
+[2026-05-13T07:52:11.978Z] Waiting for error notification to be visible
+[2026-05-13T07:52:12.118Z] error notification is visible
+[2026-05-13T07:52:13.064Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:52:13.066Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:52:14.538Z] Waiting for Search Input to be visible
+[2026-05-13T07:52:14.593Z] Search Input is visible
+[2026-05-13T07:52:14.597Z] ================================================================================
+[2026-05-13T07:52:14.599Z] RUN TEST: SC-036
+[2026-05-13T07:52:14.601Z] ================================================================================
+[2026-05-13T07:52:14.605Z] Navigate: Books 
+[2026-05-13T07:52:14.609Z] Waiting for Top menu: Books to be visible
+[2026-05-13T07:52:14.854Z] Top menu: Books is visible
+[2026-05-13T07:52:14.855Z] Clicking element: Top menu: Books
+[2026-05-13T07:52:14.856Z] Waiting for Top menu: Books to be clickable
+[2026-05-13T07:52:14.856Z] Waiting for Top menu: Books to be visible
+[2026-05-13T07:52:14.926Z] Top menu: Books is visible
+[2026-05-13T07:52:14.936Z] Top menu: Books is clickable
+[2026-05-13T07:52:15.857Z] Add to cart: First Prize Pies
+[2026-05-13T07:52:15.857Z] Clicking element: Add button: First Prize Pies
+[2026-05-13T07:52:15.857Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-13T07:52:15.858Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-13T07:52:15.877Z] Add button: First Prize Pies is visible
+[2026-05-13T07:52:15.895Z] Add button: First Prize Pies is clickable
+[2026-05-13T07:52:15.963Z] Navigating to https://demo.nopcommerce.com/cart
+[2026-05-13T07:52:17.011Z] Update cart quantity: 3
+[2026-05-13T07:52:17.012Z] Inputting "3" into element: Cart quantity input
+[2026-05-13T07:52:17.012Z] Waiting for Cart quantity input to be visible
+[2026-05-13T07:52:17.062Z] Cart quantity input is visible
+[2026-05-13T07:52:18.809Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:52:18.811Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:52:20.097Z] Waiting for Search Input to be visible
+[2026-05-13T07:52:20.265Z] Search Input is visible
+[2026-05-13T07:52:20.266Z] ================================================================================
+[2026-05-13T07:52:20.267Z] RUN TEST: SC-037
+[2026-05-13T07:52:20.267Z] ================================================================================
+[2026-05-13T07:52:20.268Z] Navigate: Books 
+[2026-05-13T07:52:20.269Z] Waiting for Top menu: Books to be visible
+[2026-05-13T07:52:20.278Z] Top menu: Books is visible
+[2026-05-13T07:52:20.279Z] Clicking element: Top menu: Books
+[2026-05-13T07:52:20.279Z] Waiting for Top menu: Books to be clickable
+[2026-05-13T07:52:20.280Z] Waiting for Top menu: Books to be visible
+[2026-05-13T07:52:20.289Z] Top menu: Books is visible
+[2026-05-13T07:52:20.300Z] Top menu: Books is clickable
+[2026-05-13T07:52:21.191Z] Add to cart: First Prize Pies
+[2026-05-13T07:52:21.192Z] Clicking element: Add button: First Prize Pies
+[2026-05-13T07:52:21.192Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-13T07:52:21.193Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-13T07:52:21.220Z] Add button: First Prize Pies is visible
+[2026-05-13T07:52:21.240Z] Add button: First Prize Pies is clickable
+[2026-05-13T07:52:21.312Z] Navigating to https://demo.nopcommerce.com/cart
+[2026-05-13T07:52:21.956Z] Update cart quantity: 5
+[2026-05-13T07:52:21.957Z] Inputting "5" into element: Cart quantity input
+[2026-05-13T07:52:21.957Z] Waiting for Cart quantity input to be visible
+[2026-05-13T07:52:32.269Z] ================================================================================
+[2026-05-13T07:52:32.270Z] ===== END CART TEST =====
+[2026-05-13T07:52:32.270Z] ================================================================================

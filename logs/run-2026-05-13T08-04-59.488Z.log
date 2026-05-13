@@ -1,0 +1,32 @@
+[2026-05-13T08:04:59.531Z] ================================================================================
+[2026-05-13T08:04:59.532Z] ===== START CART TEST =====
+[2026-05-13T08:04:59.533Z] ================================================================================
+[2026-05-13T08:05:00.177Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T08:05:00.177Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T08:05:02.123Z] Waiting for Search Input to be visible
+[2026-05-13T08:05:02.576Z] Search Input is visible
+[2026-05-13T08:05:02.579Z] ================================================================================
+[2026-05-13T08:05:02.580Z] RUN TEST: SC-005
+[2026-05-13T08:05:02.581Z] ================================================================================
+[2026-05-13T08:05:02.585Z] Navigate: Computers > Desktops
+[2026-05-13T08:05:02.586Z] Waiting for Top menu: Computers to be visible
+[2026-05-13T08:05:02.608Z] Top menu: Computers is visible
+[2026-05-13T08:05:02.676Z] Waiting for Sub menu: Desktops to be visible
+[2026-05-13T08:05:02.710Z] Sub menu: Desktops is visible
+[2026-05-13T08:05:02.711Z] Clicking element: Sub menu: Desktops
+[2026-05-13T08:05:02.711Z] Waiting for Sub menu: Desktops to be clickable
+[2026-05-13T08:05:02.712Z] Waiting for Sub menu: Desktops to be visible
+[2026-05-13T08:05:02.732Z] Sub menu: Desktops is visible
+[2026-05-13T08:05:02.746Z] Sub menu: Desktops is clickable
+[2026-05-13T08:05:03.926Z] Open product: Build your own computer
+[2026-05-13T08:05:03.926Z] Clicking element: Product title
+[2026-05-13T08:05:03.927Z] Waiting for Product title to be clickable
+[2026-05-13T08:05:03.928Z] Waiting for Product title to be visible
+[2026-05-13T08:05:04.002Z] Product title is visible
+[2026-05-13T08:05:04.025Z] Product title is clickable
+[2026-05-13T08:05:05.002Z] Configure desktop product: {"ram":"8GB","hdd":"400 GB"}
+[2026-05-13T08:05:05.003Z] Waiting for RAM Select to be visible
+[2026-05-13T08:05:05.062Z] RAM Select is visible
+[2026-05-13T08:05:30.306Z] ================================================================================
+[2026-05-13T08:05:30.311Z] ===== END CART TEST =====
+[2026-05-13T08:05:30.314Z] ================================================================================

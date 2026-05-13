@@ -1,0 +1,38 @@
+[2026-05-10T02:35:10.086Z] ================================================================================
+[2026-05-10T02:35:10.087Z] ===== START CART TEST =====
+[2026-05-10T02:35:10.088Z] ================================================================================
+[2026-05-10T02:35:10.780Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-10T02:35:10.781Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-10T02:35:11.226Z] Waiting for Search Input to be visible
+[2026-05-10T02:35:17.194Z] Search Input is visible
+[2026-05-10T02:35:17.196Z] ================================================================================
+[2026-05-10T02:35:17.197Z] RUN TEST: SC-006
+[2026-05-10T02:35:17.198Z] ================================================================================
+[2026-05-10T02:35:17.200Z] Navigate: Computers > Notebooks
+[2026-05-10T02:35:17.200Z] Waiting for Top menu: Computers to be visible
+[2026-05-10T02:35:17.217Z] Top menu: Computers is visible
+[2026-05-10T02:35:17.289Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-10T02:35:17.350Z] Sub menu: Notebooks is visible
+[2026-05-10T02:35:17.350Z] Clicking element: Sub menu: Notebooks
+[2026-05-10T02:35:17.351Z] Waiting for Sub menu: Notebooks to be clickable
+[2026-05-10T02:35:17.352Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-10T02:35:17.359Z] Sub menu: Notebooks is visible
+[2026-05-10T02:35:17.371Z] Sub menu: Notebooks is clickable
+[2026-05-10T02:35:18.959Z] Open product: Asus Laptop
+[2026-05-10T02:35:18.963Z] Clicking element: Product title
+[2026-05-10T02:35:18.965Z] Waiting for Product title to be clickable
+[2026-05-10T02:35:18.968Z] Waiting for Product title to be visible
+[2026-05-10T02:35:19.066Z] Product title is visible
+[2026-05-10T02:35:19.072Z] Product title is clickable
+[2026-05-10T02:35:19.763Z] Inputting "2" into element: Quantity input
+[2026-05-10T02:35:19.766Z] Waiting for Quantity input to be visible
+[2026-05-10T02:35:19.862Z] Quantity input is visible
+[2026-05-10T02:35:19.908Z] Add to cart from product detail
+[2026-05-10T02:35:19.909Z] Clicking element: Add to cart button
+[2026-05-10T02:35:19.909Z] Waiting for Add to cart button to be clickable
+[2026-05-10T02:35:19.910Z] Waiting for Add to cart button to be visible
+[2026-05-10T02:35:19.915Z] Add to cart button is visible
+[2026-05-10T02:35:19.921Z] Add to cart button is clickable
+[2026-05-10T02:35:20.248Z] ================================================================================
+[2026-05-10T02:35:20.251Z] ===== END CART TEST =====
+[2026-05-10T02:35:20.252Z] ================================================================================

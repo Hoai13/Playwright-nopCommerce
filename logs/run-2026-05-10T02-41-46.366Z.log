@@ -1,0 +1,114 @@
+[2026-05-10T02:41:46.410Z] ================================================================================
+[2026-05-10T02:41:46.411Z] ===== START CART TEST =====
+[2026-05-10T02:41:46.412Z] ================================================================================
+[2026-05-10T02:41:47.144Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-10T02:41:47.145Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-10T02:41:47.604Z] Waiting for Search Input to be visible
+[2026-05-10T02:41:53.766Z] Search Input is visible
+[2026-05-10T02:41:53.770Z] ================================================================================
+[2026-05-10T02:41:53.772Z] RUN TEST: SC-021
+[2026-05-10T02:41:53.773Z] ================================================================================
+[2026-05-10T02:41:53.777Z] Navigate: Jewelry 
+[2026-05-10T02:41:53.778Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-10T02:41:53.798Z] Top menu: Jewelry is visible
+[2026-05-10T02:41:53.799Z] Clicking element: Top menu: Jewelry
+[2026-05-10T02:41:53.800Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-10T02:41:53.801Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-10T02:41:53.809Z] Top menu: Jewelry is visible
+[2026-05-10T02:41:53.832Z] Top menu: Jewelry is clickable
+[2026-05-10T02:41:54.532Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-10T02:41:54.534Z] Clicking element: Product title
+[2026-05-10T02:41:54.537Z] Waiting for Product title to be clickable
+[2026-05-10T02:41:54.540Z] Waiting for Product title to be visible
+[2026-05-10T02:41:54.611Z] Product title is visible
+[2026-05-10T02:41:54.628Z] Product title is clickable
+[2026-05-10T02:41:55.326Z] Inputting "" into element: Rent start date
+[2026-05-10T02:41:55.327Z] Waiting for Rent start date to be visible
+[2026-05-10T02:41:55.364Z] Rent start date is visible
+[2026-05-10T02:41:55.426Z] Inputting "" into element: Rent end date
+[2026-05-10T02:41:55.427Z] Waiting for Rent end date to be visible
+[2026-05-10T02:41:55.454Z] Rent end date is visible
+[2026-05-10T02:41:55.521Z] Add to cart from product detail
+[2026-05-10T02:41:55.521Z] Clicking element: Add to cart button
+[2026-05-10T02:41:55.522Z] Waiting for Add to cart button to be clickable
+[2026-05-10T02:41:55.522Z] Waiting for Add to cart button to be visible
+[2026-05-10T02:41:55.529Z] Add to cart button is visible
+[2026-05-10T02:41:55.536Z] Add to cart button is clickable
+[2026-05-10T02:41:55.785Z] Verify error notification
+[2026-05-10T02:41:55.786Z] Waiting for error notification to be visible
+[2026-05-10T02:41:55.802Z] error notification is visible
+[2026-05-10T02:41:56.348Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-10T02:41:56.349Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-10T02:41:56.811Z] Waiting for Search Input to be visible
+[2026-05-10T02:42:01.852Z] Search Input is visible
+[2026-05-10T02:42:01.853Z] ================================================================================
+[2026-05-10T02:42:01.854Z] RUN TEST: SC-022
+[2026-05-10T02:42:01.854Z] ================================================================================
+[2026-05-10T02:42:01.855Z] Navigate: Jewelry 
+[2026-05-10T02:42:01.856Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-10T02:42:01.866Z] Top menu: Jewelry is visible
+[2026-05-10T02:42:01.867Z] Clicking element: Top menu: Jewelry
+[2026-05-10T02:42:01.868Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-10T02:42:01.869Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-10T02:42:01.880Z] Top menu: Jewelry is visible
+[2026-05-10T02:42:01.894Z] Top menu: Jewelry is clickable
+[2026-05-10T02:42:02.685Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-10T02:42:02.687Z] Clicking element: Product title
+[2026-05-10T02:42:02.688Z] Waiting for Product title to be clickable
+[2026-05-10T02:42:02.689Z] Waiting for Product title to be visible
+[2026-05-10T02:42:02.891Z] Product title is visible
+[2026-05-10T02:42:02.920Z] Product title is clickable
+[2026-05-10T02:42:04.117Z] Inputting "31/12/2026" into element: Rent start date
+[2026-05-10T02:42:04.120Z] Waiting for Rent start date to be visible
+[2026-05-10T02:42:04.241Z] Rent start date is visible
+[2026-05-10T02:42:04.300Z] Inputting "31/12/2026" into element: Rent end date
+[2026-05-10T02:42:04.301Z] Waiting for Rent end date to be visible
+[2026-05-10T02:42:04.309Z] Rent end date is visible
+[2026-05-10T02:42:04.360Z] Add to cart from product detail
+[2026-05-10T02:42:04.361Z] Clicking element: Add to cart button
+[2026-05-10T02:42:04.362Z] Waiting for Add to cart button to be clickable
+[2026-05-10T02:42:04.362Z] Waiting for Add to cart button to be visible
+[2026-05-10T02:42:04.386Z] Add to cart button is visible
+[2026-05-10T02:42:04.398Z] Add to cart button is clickable
+[2026-05-10T02:42:04.645Z] Verify error notification
+[2026-05-10T02:42:04.645Z] Waiting for error notification to be visible
+[2026-05-10T02:42:04.770Z] error notification is visible
+[2026-05-10T02:42:05.305Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-10T02:42:05.306Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-10T02:42:05.770Z] Waiting for Search Input to be visible
+[2026-05-10T02:42:10.938Z] Search Input is visible
+[2026-05-10T02:42:10.939Z] ================================================================================
+[2026-05-10T02:42:10.940Z] RUN TEST: SC-023
+[2026-05-10T02:42:10.940Z] ================================================================================
+[2026-05-10T02:42:10.941Z] Navigate: Jewelry 
+[2026-05-10T02:42:10.942Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-10T02:42:10.955Z] Top menu: Jewelry is visible
+[2026-05-10T02:42:10.959Z] Clicking element: Top menu: Jewelry
+[2026-05-10T02:42:10.960Z] Waiting for Top menu: Jewelry to be clickable
+[2026-05-10T02:42:10.961Z] Waiting for Top menu: Jewelry to be visible
+[2026-05-10T02:42:10.967Z] Top menu: Jewelry is visible
+[2026-05-10T02:42:10.973Z] Top menu: Jewelry is clickable
+[2026-05-10T02:42:12.081Z] Open product: Elegant Gemstone Necklace (rental)
+[2026-05-10T02:42:12.085Z] Clicking element: Product title
+[2026-05-10T02:42:12.086Z] Waiting for Product title to be clickable
+[2026-05-10T02:42:12.089Z] Waiting for Product title to be visible
+[2026-05-10T02:42:12.145Z] Product title is visible
+[2026-05-10T02:42:12.159Z] Product title is clickable
+[2026-05-10T02:42:12.887Z] Inputting "abc" into element: Rent start date
+[2026-05-10T02:42:12.889Z] Waiting for Rent start date to be visible
+[2026-05-10T02:42:12.917Z] Rent start date is visible
+[2026-05-10T02:42:12.997Z] Inputting "abc" into element: Rent end date
+[2026-05-10T02:42:12.999Z] Waiting for Rent end date to be visible
+[2026-05-10T02:42:13.009Z] Rent end date is visible
+[2026-05-10T02:42:13.091Z] Add to cart from product detail
+[2026-05-10T02:42:13.092Z] Clicking element: Add to cart button
+[2026-05-10T02:42:13.092Z] Waiting for Add to cart button to be clickable
+[2026-05-10T02:42:13.092Z] Waiting for Add to cart button to be visible
+[2026-05-10T02:42:13.100Z] Add to cart button is visible
+[2026-05-10T02:42:13.106Z] Add to cart button is clickable
+[2026-05-10T02:42:13.355Z] Verify error notification
+[2026-05-10T02:42:13.356Z] Waiting for error notification to be visible
+[2026-05-10T02:42:13.365Z] error notification is visible
+[2026-05-10T02:42:13.427Z] ================================================================================
+[2026-05-10T02:42:13.429Z] ===== END CART TEST =====
+[2026-05-10T02:42:13.429Z] ================================================================================

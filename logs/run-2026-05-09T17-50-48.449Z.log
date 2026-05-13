@@ -1,0 +1,49 @@
+[2026-05-09T17:50:48.494Z] ================================================================================
+[2026-05-09T17:50:48.495Z] ===== START CART TEST =====
+[2026-05-09T17:50:48.495Z] ================================================================================
+[2026-05-09T17:50:49.426Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-09T17:50:49.427Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-09T17:50:49.891Z] Waiting for Search Input to be visible
+[2026-05-09T17:50:56.013Z] Search Input is visible
+[2026-05-09T17:50:56.015Z] ================================================================================
+[2026-05-09T17:50:56.015Z] RUN TEST: SC-001
+[2026-05-09T17:50:56.016Z] ================================================================================
+[2026-05-09T17:50:56.018Z] Navigate: Books 
+[2026-05-09T17:50:56.019Z] Waiting for Top menu: Books to be visible
+[2026-05-09T17:50:56.030Z] Top menu: Books is visible
+[2026-05-09T17:50:56.030Z] Clicking element: Top menu: Books
+[2026-05-09T17:50:56.031Z] Waiting for Top menu: Books to be clickable
+[2026-05-09T17:50:56.032Z] Waiting for Top menu: Books to be visible
+[2026-05-09T17:50:56.045Z] Top menu: Books is visible
+[2026-05-09T17:50:56.062Z] Top menu: Books is clickable
+[2026-05-09T17:50:56.858Z] Add to cart: First Prize Pies
+[2026-05-09T17:50:56.860Z] Clicking element: Add button: First Prize Pies
+[2026-05-09T17:50:56.862Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-09T17:50:56.862Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-09T17:50:56.984Z] Add button: First Prize Pies is visible
+[2026-05-09T17:50:56.991Z] Add button: First Prize Pies is clickable
+[2026-05-09T17:50:57.036Z] Open mini cart
+[2026-05-09T17:50:57.044Z] Waiting for Mini Cart Label to be visible
+[2026-05-09T17:50:57.053Z] Mini Cart Label is visible
+[2026-05-09T17:50:57.100Z] Waiting for Mini Cart Dropdown to be visible
+[2026-05-09T17:50:57.106Z] Mini Cart Dropdown is visible
+[2026-05-09T17:50:57.109Z] Verify success notification
+[2026-05-09T17:50:57.112Z] Waiting for success notification to be visible
+[2026-05-09T17:50:57.504Z] success notification is visible
+[2026-05-09T17:50:57.531Z] Clicking element: Close Notification
+[2026-05-09T17:50:57.532Z] Waiting for Close Notification to be clickable
+[2026-05-09T17:50:57.535Z] Waiting for Close Notification to be visible
+[2026-05-09T17:50:57.549Z] Close Notification is visible
+[2026-05-09T17:50:57.559Z] Close Notification is clickable
+[2026-05-09T17:50:57.621Z] Open mini cart
+[2026-05-09T17:50:57.627Z] Waiting for Mini Cart Label to be visible
+[2026-05-09T17:50:57.635Z] Mini Cart Label is visible
+[2026-05-09T17:50:58.537Z] Waiting for Mini Cart Dropdown to be visible
+[2026-05-09T17:50:58.543Z] Mini Cart Dropdown is visible
+[2026-05-09T17:50:58.544Z] Waiting for Mini Cart Dropdown to be visible
+[2026-05-09T17:50:58.549Z] Mini Cart Dropdown is visible
+[2026-05-09T17:50:58.550Z] Waiting for Mini Cart Count to be visible
+[2026-05-09T17:50:58.558Z] Mini Cart Count is visible
+[2026-05-09T17:50:58.626Z] ================================================================================
+[2026-05-09T17:50:58.627Z] ===== END CART TEST =====
+[2026-05-09T17:50:58.628Z] ================================================================================

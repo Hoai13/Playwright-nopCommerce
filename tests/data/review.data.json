@@ -1,0 +1,88 @@
+{
+  "URLS": {
+    "HOME": "https://demo.nopcommerce.com/",
+    "REGISTER": "https://demo.nopcommerce.com/register"
+  },
+  "PRODUCT": {
+    "CATEGORY": "Computers",
+    "SUB_CATEGORY": "Notebooks",
+    "NAME": "Apple MacBook Pro"
+  },
+  "REGISTER_USER": {
+    "firstName": "auto",
+    "lastName": "review",
+    "password": "123456",
+    "confirmPassword": "123456",
+    "emailPrefix": "rv",
+    "successMessage": "Your registration completed"
+  },
+  "MESSAGES": {
+    "REVIEW_SUCCESS": "Product review is successfully added.",
+    "TITLE_REQUIRED": "Product review title is required.",
+    "TEXT_REQUIRED": "Product review text is required.",
+    "TITLE_RANGE": "must be between 1 and 200 characters"
+  },
+  "VALUES": {
+    "LONG_TITLE_201": "__LONG_TEXT__",
+    "MAX_TITLE_200": "__LONG_TEXT_200__",
+    "MIN_TITLE": "A"
+  },
+  "CASES": [
+    { "id": "RV-001", "flow": "viewWithoutLogin" },
+    {
+      "id": "RV-002",
+      "flow": "submitReview",
+      "requiresLogin": true,
+      "review": { "title": "Excellent Camera", "text": "Great image quality and easy to use", "rating": 5 },
+      "expect": { "success": true, "containsTitle": "Excellent Camera" }
+    },
+    {
+      "id": "RV-003",
+      "flow": "submitReview",
+      "requiresLogin": true,
+      "review": { "title": "", "text": "Good camera", "rating": 4 },
+      "expect": { "errorKey": "TITLE_REQUIRED" }
+    },
+    {
+      "id": "RV-005",
+      "flow": "submitReview",
+      "requiresLogin": true,
+      "review": { "title": "__LONG_TEXT_201__", "text": "Good camera", "rating": 4 },
+      "expect": { "errorKey": "TITLE_RANGE" }
+    },
+    {
+      "id": "RV-006",
+      "flow": "submitReview",
+      "requiresLogin": true,
+      "review": { "title": "A", "text": "Good camera", "rating": 5 },
+      "expect": { "success": true }
+    },
+    {
+      "id": "RV-007",
+      "flow": "submitReview",
+      "requiresLogin": true,
+      "review": { "title": "__LONG_TEXT_200__", "text": "Good camera", "rating": 5 },
+      "expect": { "success": true }
+    },
+    {
+      "id": "RV-008",
+      "flow": "submitReview",
+      "requiresLogin": true,
+      "review": { "title": "Nice camera", "text": "", "rating": 4 },
+      "expect": { "errorKey": "TEXT_REQUIRED" }
+    },
+    {
+      "id": "RV-011",
+      "flow": "submitReview",
+      "requiresLogin": true,
+      "review": { "title": "Good camera", "text": "Works well" },
+      "expect": { "success": true }
+    }
+  ],
+  "RATING_CASES": [1, 2, 3, 4, 5]
+  ,
+  "RATING_TEMPLATE": {
+    "titlePrefix": "Rating",
+    "text": "Rating coverage"
+  }
+}

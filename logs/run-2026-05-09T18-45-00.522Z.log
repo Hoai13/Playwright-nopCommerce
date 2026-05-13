@@ -1,0 +1,29 @@
+[2026-05-09T18:45:00.568Z] ================================================================================
+[2026-05-09T18:45:00.569Z] ===== START CART TEST =====
+[2026-05-09T18:45:00.570Z] ================================================================================
+[2026-05-09T18:45:01.453Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-09T18:45:01.456Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-09T18:45:02.008Z] Waiting for Search Input to be visible
+[2026-05-09T18:45:09.271Z] Search Input is visible
+[2026-05-09T18:45:09.275Z] ================================================================================
+[2026-05-09T18:45:09.277Z] RUN TEST: SC-003
+[2026-05-09T18:45:09.279Z] ================================================================================
+[2026-05-09T18:45:09.286Z] Navigate: Computers > Desktops
+[2026-05-09T18:45:09.289Z] Waiting for Top menu: Computers to be visible
+[2026-05-09T18:45:09.348Z] Top menu: Computers is visible
+[2026-05-09T18:45:09.644Z] Waiting for Sub menu: Desktops to be visible
+[2026-05-09T18:45:09.692Z] Sub menu: Desktops is visible
+[2026-05-09T18:45:09.694Z] Clicking element: Sub menu: Desktops
+[2026-05-09T18:45:09.695Z] Waiting for Sub menu: Desktops to be clickable
+[2026-05-09T18:45:09.697Z] Waiting for Sub menu: Desktops to be visible
+[2026-05-09T18:45:09.750Z] Sub menu: Desktops is visible
+[2026-05-09T18:45:09.786Z] Sub menu: Desktops is clickable
+[2026-05-09T18:45:11.542Z] Add to cart: Build your own computer
+[2026-05-09T18:45:11.544Z] Clicking element: Add button: Build your own computer
+[2026-05-09T18:45:11.546Z] Waiting for Add button: Build your own computer to be clickable
+[2026-05-09T18:45:11.548Z] Waiting for Add button: Build your own computer to be visible
+[2026-05-09T18:45:11.606Z] Add button: Build your own computer is visible
+[2026-05-09T18:45:11.633Z] Add button: Build your own computer is clickable
+[2026-05-09T18:45:13.633Z] ================================================================================
+[2026-05-09T18:45:13.637Z] ===== END CART TEST =====
+[2026-05-09T18:45:13.643Z] ================================================================================

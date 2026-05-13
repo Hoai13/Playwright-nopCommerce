@@ -1,0 +1,58 @@
+[2026-05-13T07:46:58.741Z] ================================================================================
+[2026-05-13T07:46:58.742Z] ===== START CART TEST =====
+[2026-05-13T07:46:58.743Z] ================================================================================
+[2026-05-13T07:46:59.298Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:46:59.300Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:47:00.907Z] Waiting for Search Input to be visible
+[2026-05-13T07:47:01.247Z] Search Input is visible
+[2026-05-13T07:47:01.249Z] ================================================================================
+[2026-05-13T07:47:01.249Z] RUN TEST: SC-008
+[2026-05-13T07:47:01.251Z] ================================================================================
+[2026-05-13T07:47:01.253Z] Navigate: Computers > Notebooks
+[2026-05-13T07:47:01.254Z] Waiting for Top menu: Computers to be visible
+[2026-05-13T07:47:01.273Z] Top menu: Computers is visible
+[2026-05-13T07:47:01.396Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-13T07:47:01.417Z] Sub menu: Notebooks is visible
+[2026-05-13T07:47:01.418Z] Clicking element: Sub menu: Notebooks
+[2026-05-13T07:47:01.419Z] Waiting for Sub menu: Notebooks to be clickable
+[2026-05-13T07:47:01.420Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-13T07:47:01.435Z] Sub menu: Notebooks is visible
+[2026-05-13T07:47:01.449Z] Sub menu: Notebooks is clickable
+[2026-05-13T07:47:02.776Z] Open product: Asus Laptop
+[2026-05-13T07:47:02.777Z] Clicking element: Product title
+[2026-05-13T07:47:02.778Z] Waiting for Product title to be clickable
+[2026-05-13T07:47:02.779Z] Waiting for Product title to be visible
+[2026-05-13T07:47:02.848Z] Product title is visible
+[2026-05-13T07:47:02.885Z] Product title is clickable
+[2026-05-13T07:47:04.000Z] Inputting "1" into element: Quantity input
+[2026-05-13T07:47:04.002Z] Waiting for Quantity input to be visible
+[2026-05-13T07:47:04.098Z] Quantity input is visible
+[2026-05-13T07:47:04.237Z] Add to cart from product detail
+[2026-05-13T07:47:04.239Z] Clicking element: Add to cart button
+[2026-05-13T07:47:04.239Z] Waiting for Add to cart button to be clickable
+[2026-05-13T07:47:04.241Z] Waiting for Add to cart button to be visible
+[2026-05-13T07:47:04.261Z] Add to cart button is visible
+[2026-05-13T07:47:04.276Z] Add to cart button is clickable
+[2026-05-13T07:47:04.575Z] Verify success notification
+[2026-05-13T07:47:04.576Z] Waiting for success notification to be visible
+[2026-05-13T07:47:04.974Z] success notification is visible
+[2026-05-13T07:47:06.371Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-13T07:47:06.372Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-13T07:47:07.659Z] Waiting for Search Input to be visible
+[2026-05-13T07:47:07.954Z] Search Input is visible
+[2026-05-13T07:47:07.955Z] ================================================================================
+[2026-05-13T07:47:07.955Z] RUN TEST: SC-009
+[2026-05-13T07:47:07.956Z] ================================================================================
+[2026-05-13T07:47:07.957Z] Navigate: Computers > Notebooks
+[2026-05-13T07:47:07.957Z] Waiting for Top menu: Computers to be visible
+[2026-05-13T07:47:07.970Z] Top menu: Computers is visible
+[2026-05-13T07:47:08.032Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-13T07:47:08.068Z] Sub menu: Notebooks is visible
+[2026-05-13T07:47:08.070Z] Clicking element: Sub menu: Notebooks
+[2026-05-13T07:47:08.072Z] Waiting for Sub menu: Notebooks to be clickable
+[2026-05-13T07:47:08.074Z] Waiting for Sub menu: Notebooks to be visible
+[2026-05-13T07:47:08.110Z] Sub menu: Notebooks is visible
+[2026-05-13T07:47:08.143Z] Sub menu: Notebooks is clickable
+[2026-05-13T07:47:36.419Z] ================================================================================
+[2026-05-13T07:47:36.422Z] ===== END CART TEST =====
+[2026-05-13T07:47:36.423Z] ================================================================================

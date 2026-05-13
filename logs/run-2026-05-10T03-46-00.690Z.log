@@ -1,0 +1,39 @@
+[2026-05-10T03:46:00.728Z] ================================================================================
+[2026-05-10T03:46:00.730Z] ===== START CART TEST =====
+[2026-05-10T03:46:00.731Z] ================================================================================
+[2026-05-10T03:46:01.284Z] Navigate to: https://demo.nopcommerce.com/
+[2026-05-10T03:46:01.285Z] Navigating to https://demo.nopcommerce.com/
+[2026-05-10T03:46:01.761Z] Waiting for Search Input to be visible
+[2026-05-10T03:46:06.843Z] Search Input is visible
+[2026-05-10T03:46:06.845Z] ================================================================================
+[2026-05-10T03:46:06.846Z] RUN TEST: SC-037
+[2026-05-10T03:46:07.052Z] ================================================================================
+[2026-05-10T03:46:07.056Z] Navigate: Books 
+[2026-05-10T03:46:07.057Z] Waiting for Top menu: Books to be visible
+[2026-05-10T03:46:07.073Z] Top menu: Books is visible
+[2026-05-10T03:46:07.074Z] Clicking element: Top menu: Books
+[2026-05-10T03:46:07.075Z] Waiting for Top menu: Books to be clickable
+[2026-05-10T03:46:07.075Z] Waiting for Top menu: Books to be visible
+[2026-05-10T03:46:07.082Z] Top menu: Books is visible
+[2026-05-10T03:46:07.098Z] Top menu: Books is clickable
+[2026-05-10T03:46:07.905Z] Add to cart: First Prize Pies
+[2026-05-10T03:46:07.907Z] Clicking element: Add button: First Prize Pies
+[2026-05-10T03:46:07.907Z] Waiting for Add button: First Prize Pies to be clickable
+[2026-05-10T03:46:07.908Z] Waiting for Add button: First Prize Pies to be visible
+[2026-05-10T03:46:07.928Z] Add button: First Prize Pies is visible
+[2026-05-10T03:46:07.983Z] Add button: First Prize Pies is clickable
+[2026-05-10T03:46:08.152Z] Open mini cart
+[2026-05-10T03:46:08.157Z] Waiting for Mini Cart Label to be visible
+[2026-05-10T03:46:08.162Z] Mini Cart Label is visible
+[2026-05-10T03:46:08.200Z] Waiting for Mini Cart Dropdown to be visible
+[2026-05-10T03:46:08.205Z] Mini Cart Dropdown is visible
+[2026-05-10T03:46:08.206Z] Waiting for Mini Cart Count to be visible
+[2026-05-10T03:46:08.216Z] Mini Cart Count is visible
+[2026-05-10T03:46:08.231Z] Waiting for Mini Cart Count to be visible
+[2026-05-10T03:46:08.237Z] Mini Cart Count is visible
+[2026-05-10T03:46:08.623Z] Open mini cart
+[2026-05-10T03:46:08.625Z] Waiting for Mini Cart Label to be visible
+[2026-05-10T03:46:08.631Z] Mini Cart Label is visible
+[2026-05-10T03:46:31.133Z] ================================================================================
+[2026-05-10T03:46:31.133Z] ===== END CART TEST =====
+[2026-05-10T03:46:31.134Z] ================================================================================
