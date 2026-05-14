@@ -95,10 +95,7 @@ export class CartPage extends BasePage {
     }
 
     if (config.hdd) {
-      const hddOption = this.page
-        .locator('li') 
-        .filter({ hasText: new RegExp(`^${config.hdd}`, 'i') }) 
-        .locator('input'); 
+      const hddOption = this.page.locator("label", { hasText: config.hdd });
 
       await UIHelpers.waitForVisible(hddOption, `HDD Option: ${config.hdd}`);
       await hddOption.click();

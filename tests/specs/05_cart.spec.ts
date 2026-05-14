@@ -46,12 +46,12 @@ const validateExpected = async ({
    * NOTIFICATION
    * =========================
    */
-  if (expected.notification) {
-    await homePage.verifyNotification(
-      expected.status ?? "success",
-      msg(expected.notification)
-    );
-  }
+  // if (expected.notification) {
+  //   await homePage.verifyNotification(
+  //     expected.status ?? "success",
+  //     msg(expected.notification)
+  //   );
+  // }
 
   if (expected.messageKey) {
     await homePage.verifyNotification(
@@ -198,7 +198,10 @@ test.describe("Shopping Cart", () => {
               dataFile.PRODUCTS[tc.input.product]
             );
 
-            await homePage.closeNotificationIfVisible();
+            if (tc.expected.notification) {
+              await homePage.verifyNotification(tc.expected.status ?? "success", msg(tc.expected.notification));
+              await homePage.closeNotificationIfVisible();
+            }
           }
         });
       }

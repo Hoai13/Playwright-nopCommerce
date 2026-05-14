@@ -143,10 +143,6 @@ export type CartDataFile = {
     INVALID_DATE: string;
 
     NON_NUMERIC_DATE: string;
-
-    MOUSE_OUT_X: number;
-
-    MOUSE_OUT_Y: number;
   };
 
   CASES: {

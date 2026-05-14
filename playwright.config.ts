@@ -4,7 +4,7 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: false,
   retries: process.env.CI ? 2 : 0,
-  workers: 1,
+  workers: 4,
 
   reporter: 'html',
   
@@ -24,6 +24,7 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         launchOptions: {
+          //headless: true,
           headless: process.env.PW_HEADLESS === '1',
           args: [
             '--start-maximized',

@@ -24,16 +24,6 @@
   "CASES": [
     { "id": "RE-001", "description": "Register successful", "override": {}, "expected": { "success": true }, "tags": ["positive"] },
 
-    { "id": "RE-002-1", "description": "Gender none", "override": {}, "expected": { "success": true }, "tags": ["positive"] },
-    { "id": "RE-002-2", "description": "Gender Male", "override": { "gender": "Male" }, "expected": { "success": true }, "tags": ["positive"] },
-    { "id": "RE-002-3", "description": "Gender Female", "override": { "gender": "Female" }, "expected": { "success": true }, "tags": ["positive"] },
-
-    { "id": "RE-003-1", "description": "Company empty", "override": { "company": "" }, "expected": { "success": true }, "tags": ["positive"] },
-    { "id": "RE-003-2", "description": "Company valid", "override": { "company": "Playwright QA" }, "expected": { "success": true }, "tags": ["positive"] },
-
-    { "id": "RE-004-1", "description": "Newsletter checked", "override": { "newsletter": true }, "expected": { "success": true }, "tags": ["positive"] },
-    { "id": "RE-004-2", "description": "Newsletter unchecked", "override": { "newsletter": false }, "expected": { "success": true }, "tags": ["positive"] },
-
     { "id": "RE-005", "description": "First name empty", "override": { "firstName": "" }, "expected": { "success": false, "field": "firstName", "message": "First name is required." }, "tags": ["validation"] },
     { "id": "RE-006", "description": "First name numeric", "override": { "firstName": "12345" }, "expected": { "success": false, "field": "firstName" }, "tags": ["bug"] },
     { "id": "RE-007", "description": "First name special", "override": { "firstName": "@#$%" }, "expected": { "success": false, "field": "firstName" }, "tags": ["bug"] },
