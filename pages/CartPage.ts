@@ -1,7 +1,7 @@
 import { Locator, Page, expect } from "@playwright/test";
 import { BasePage } from "./BasePage";
 import UIHelpers from "../helpers/UIHelpers";
-import { logStep } from "../helpers/Logger";
+import { logStep } from "../helpers/logger";
 
 export class CartPage extends BasePage {
   readonly addToCartButton = this.page.locator(".add-to-cart-button");

@@ -38,7 +38,7 @@
     { "id": "RE-014", "description": "Invalid email", "override": { "email": "abcgmail.com" }, "expected": { "success": false, "field": "email", "message": "Please enter a valid email address." }, "tags": ["validation"] },
     { "id": "RE-015", "description": "Email no domain", "override": { "email": "abc@" }, "expected": { "success": false, "field": "email", "message": "Please enter a valid email address." }, "tags": ["validation"] },
     { "id": "RE-016", "description": "Email with space", "override": { "email": "abc   @gmail.com" }, "expected": { "success": false, "field": "email", "message": "Please enter a valid email address." }, "tags": ["validation"] },
-    { "id": "RE-017", "description": "Email special", "override": { "email": "abc#$&*%@gmail.com" }, "expected": { "success": false, "field": "email" }, "tags": ["bug"] },
+    { "id": "RE-017", "description": "Email special", "override": { "email": "abcd!$&*%@gmail.com" }, "expected": { "success": false, "field": "email" }, "tags": ["bug"] },
     { "id": "RE-018", "description": "Email too long", "override": { "email": "__LONG_EMAIL__" }, "expected": { "success": false, "field": "email" }, "tags": ["edge"] },
 
     { "id": "RE-019", "description": "Duplicate email", "override": {}, "expected": { "success": false, "summaryMessage": "The specified email already exists" }, "tags": ["business"], "flow": "duplicateEmail" },

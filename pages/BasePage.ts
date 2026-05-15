@@ -1,6 +1,6 @@
 import { Page, Locator, expect } from "@playwright/test";
 import UIHelpers from "../helpers/UIHelpers";
-import { logStep } from "../helpers/Logger";
+import { logStep } from "../helpers/logger";
 
 export class BasePage {
   constructor(readonly page: Page) {}

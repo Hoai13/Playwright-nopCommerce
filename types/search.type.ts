@@ -1,4 +1,3 @@
-// search.type.ts
 export interface SearchDataFile {
   URLS: {
     HOME: string;

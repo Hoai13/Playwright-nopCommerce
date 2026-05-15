@@ -1,69 +1,30 @@
-export type ProductCategoryFlow =
-  | "categoryBasic"
-  | "categoryNoProduct"
-  | "hoverSubMenu"
-  | "navigateSubCategory"
-  | "breadcrumbDisplay"
-  | "breadcrumbToHome"
-  | "breadcrumbToParent"
-  | "viewModeDefault"
-  | "viewModeGrid"
-  | "viewModeList"
-  | "viewModeToggle"
-  | "viewModePersist"
-  | "productDetail"
-  | "addToCart"
-  | "requireOptionCart"
-  | "addToWishlist"
-  | "requireOptionWishlist"
-  | "addToCompare"
-  | "filterSingle"
-  | "filterMultiple"
-  | "paginationFirst"
-  | "paginationNext"
-  | "paginationLast"
-  | "paginationPrevious"
-  | "pageSizeChange"
-  | "pageSizeReset"
-  | "paginationInvalidLow"
-  | "paginationInvalidHigh"
-  | "paginationInvalidFormat";
+export type ProductCategoryAction = 
+  | "detail" 
+  | "wishlist" 
+  | "compare";
 
-export interface ProductCategoryFilter {
-  type: "manufacturer" | "spec" | "price";
-  label: string;
+export interface ProductCategoryInput {
+  category: string;
+  subCategory?: string;
+  product?: string;
 }
 
 export interface ProductCategoryExpected {
   title?: string;
   breadcrumb?: string;
   subCategories?: string[];
-  urlRegex?: string;
-  message?: string;
-  viewMode?: "grid" | "list";
-  currentPage?: number;
-  productsPerPage?: number;
+  urlContains?: string;
+  notification?: 
+    | "ADD_WISHLIST_SUCCESS" 
+    | "ADD_COMPARE_SUCCESS";
 }
 
-export interface ProductCategoryTestCase {
+export interface ProductCategoryCase {
   id: string;
   description: string;
-  flow: ProductCategoryFlow;
-
-  category?: string;
-  subCategory?: string;
-  breadcrumbClick?: string;
-  productName?: string;
-  url?: string;
-  invalidQuery?: string;
-
-  filters?: ProductCategoryFilter[];
-  sortLabel?: string;
-  pageSize?: string;
-  targetPage?: number;
-  invalidPageNumber?: string;
-
-  expected?: ProductCategoryExpected;
+  action?: ProductCategoryAction;
+  input: ProductCategoryInput;
+  expected: ProductCategoryExpected;
   tags?: string[];
 }
 
@@ -72,8 +33,9 @@ export interface ProductCategoryDataFile {
     HOME: string;
   };
   MESSAGES: {
-    HOME_BREADCRUMB: string;
-    HOME_URL_REGEX: string;
+    [key: string]: string;
+    ADD_WISHLIST_SUCCESS: string;
+    ADD_COMPARE_SUCCESS: string;
     NO_PRODUCTS: string;
   };
   PRODUCTS: {
@@ -81,5 +43,5 @@ export interface ProductCategoryDataFile {
     CONFIGURABLE: string;
     SIMPLE: string;
   };
-  CASES: ProductCategoryTestCase[];
+  CASES: ProductCategoryCase[];
 }

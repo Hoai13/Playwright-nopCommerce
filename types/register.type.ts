@@ -1,9 +1,3 @@
-// export type SpecialCase =
-//   | "longFirstName"
-//   | "longLastName"
-//   | "longPassword"
-//   | "longEmail";
-
 export type Gender = "Male" | "Female";
 
 export interface RegisterFormData {

@@ -1,5 +1,5 @@
 import { expect, Locator } from "@playwright/test";
-import { logStep, logSuccess, logWarning } from "./Logger";
+import { logStep, logSuccess, logWarning } from "./logger";
 
 export default class UIHelpers {
   static DEFAULT_TIMEOUT = 10000;
@@ -10,7 +10,6 @@ export default class UIHelpers {
     timeout: number = UIHelpers.DEFAULT_TIMEOUT
   ) {
     logStep(`Waiting for ${elementName} to be visible`);
-    //await locator.waitFor({ state: "attached", timeout })
     await expect(locator).toBeVisible({ timeout });
 
     logSuccess(`${elementName} is visible`);

@@ -10,34 +10,36 @@ const SPECIAL_TOKENS = {
 };
 
 export const resolveSpecialTokens = <T extends Record<string, any>>(
-  data: T
+  data: T,
+  values?: Record<string, string> // Thêm tham số values (optional)
 ): T => {
   const resolved: Record<string, any> = { ...data };
 
   for (const key of Object.keys(resolved)) {
-    const value = resolved[key];
+    let value = resolved[key];
     if (typeof value !== "string") continue;
 
+    // BƯỚC MỚI: Nếu giá trị là một Key trong VALUES (ví dụ: "TITLE_201"), lấy giá trị thực tế ra
+    if (values && values[value]) {
+      value = values[value];
+    }
+
+    // BƯỚC CŨ: Xử lý các token đặc biệt (__LONG_TEXT__,...)
     switch (value) {
       case SPECIAL_TOKENS.LONG_TEXT:
         resolved[key] = generateRandomString(256);
         break;
-
       case SPECIAL_TOKENS.LONG_TEXT_200:
         resolved[key] = generateRandomString(200);
         break;
-
       case SPECIAL_TOKENS.LONG_TEXT_201:
         resolved[key] = generateRandomString(201);
         break;
-
-      case SPECIAL_TOKENS.LONG_EMAIL:
-        resolved[key] = `${generateRandomString(200)}@gmail.com`;
-        break;
+      // Nếu không phải token đặc biệt, giữ nguyên giá trị đã lấy từ VALUES (ví dụ: "S&")
+      default:
+        resolved[key] = value; 
     }
   }
-
-  // Special-case: long password needs to update multiple fields if present
   for (const key of Object.keys(resolved)) {
     if (resolved[key] !== SPECIAL_TOKENS.LONG_PASSWORD) continue;
 
@@ -50,6 +52,5 @@ export const resolveSpecialTokens = <T extends Record<string, any>>(
   return resolved as T;
 };
 
-// Backward-compatible API used by register spec
 export const resolveSpecialValues = (data: RegisterFormData): RegisterFormData =>
   resolveSpecialTokens<RegisterFormData>(data);

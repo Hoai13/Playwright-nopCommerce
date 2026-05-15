@@ -6,7 +6,7 @@ import searchData from "../data/search.data.json";
 import {SearchData, SearchDataFile} from "../../types/search.type";
 
 import { resolveSpecialTokens } from "../../helpers/dataHelper";
-import { logTitle } from "../../helpers/Logger";
+import { logTitle } from "../../helpers/logger";
 
 const dataFile = searchData as unknown as SearchDataFile;
 

@@ -3,12 +3,10 @@
     "HOME": "https://demo.nopcommerce.com/",
     "SEARCH": "https://demo.nopcommerce.com/search"
   },
-
   "MESSAGES": {
     "MIN_LENGTH": "Search term minimum length is 3 characters",
     "NO_RESULT": "No products were found that matched your criteria."
   },
-
   "BASE": {
     "keyword": "Apple",
     "advanced": false,
@@ -18,283 +16,25 @@
     "inDescription": false,
     "useEnter": false
   },
-
   "CASES": [
-    {
-      "id": "SR-001",
-      "description": "Search with empty keyword",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": ""
-      },
-      "expected": {
-        "status": "warning",
-        "messageKey": "MIN_LENGTH"
-      },
-      "tags": ["validation"]
-    },
-
-    {
-      "id": "SR-002",
-      "description": "Search with spaces only",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": "   "
-      },
-      "expected": {
-        "status": "warning",
-        "messageKey": "MIN_LENGTH"
-      },
-      "tags": ["validation"]
-    },
-
-    {
-      "id": "SR-003",
-      "description": "Search with special characters",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": "@#$%^"
-      },
-      "expected": {
-        "status": "empty",
-        "messageKey": "NO_RESULT"
-      },
-      "tags": ["edge"]
-    },
-
-    {
-      "id": "SR-004",
-      "description": "Search with very long keyword",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": "__LONG_TEXT__"
-      },
-      "expected": {
-        "status": "empty",
-        "messageKey": "NO_RESULT"
-      },
-      "tags": ["edge"]
-    },
-
-    {
-      "id": "SR-005",
-      "description": "Search with valid keyword",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": "Apple"
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["positive"]
-    },
-
-    {
-      "id": "SR-006",
-      "description": "Search with exactly 3 characters",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": "cam"
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["boundary"]
-    },
-
-    {
-      "id": "SR-007",
-      "description": "Search with less than 3 characters",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": "ab"
-      },
-      "expected": {
-        "status": "warning",
-        "messageKey": "MIN_LENGTH"
-      },
-      "tags": ["boundary"]
-    },
-
-    {
-      "id": "SR-008",
-      "description": "Search keyword with leading/trailing spaces",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": "  laptop  "
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["positive"]
-    },
-
-    {
-      "id": "SR-009",
-      "description": "Search non-existing product",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": "xyz123"
-      },
-      "expected": {
-        "status": "empty",
-        "messageKey": "NO_RESULT"
-      },
-      "tags": ["negative"]
-    },
-
-    {
-      "id": "SR-010",
-      "description": "Search should be case insensitive",
-      "flow": "basicSearch",
-      "override": {
-        "keyword": "BUILD"
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["positive"]
-    },
-
-    {
-      "id": "SR-014",
-      "description": "Search by category",
-      "flow": "searchByCategory",
-      "override": {
-        "keyword": "Nokia",
-        "advanced": true,
-        "categoryLabel": "Electronics >> Cell phones"
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["filter"]
-    },
-
-    {
-      "id": "SR-015",
-      "description": "Search by manufacturer",
-      "flow": "searchByManufacturer",
-      "override": {
-        "keyword": "Apple",
-        "advanced": true,
-        "manufacturerLabel": "Apple"
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["filter"]
-    },
-
-    {
-      "id": "SR-016",
-      "description": "Search by category and manufacturer",
-      "flow": "searchByCategoryManufacturer",
-      "override": {
-        "keyword": "Apple",
-        "advanced": true,
-        "categoryLabel": "Computers >> Notebooks",
-        "manufacturerLabel": "Apple"
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["filter"]
-    },
-
-    {
-      "id": "SR-017",
-      "description": "Search including subcategories",
-      "flow": "searchIncludeSub",
-      "override": {
-        "keyword": "Nokia",
-        "advanced": true,
-        "categoryLabel": "Electronics",
-        "includeSub": true
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["filter"]
-    },
-
-    {
-      "id": "SR-018",
-      "description": "Empty keyword with category filter",
-      "flow": "searchByCategory",
-      "override": {
-        "keyword": "",
-        "advanced": true,
-        "categoryLabel": "Electronics"
-      },
-      "expected": {
-        "status": "warning",
-        "messageKey": "MIN_LENGTH"
-      },
-      "tags": ["validation"]
-    },
-
-    {
-      "id": "SR-019",
-      "description": "Empty keyword with manufacturer filter",
-      "flow": "searchByManufacturer",
-      "override": {
-        "keyword": "",
-        "advanced": true,
-        "manufacturerLabel": "Apple"
-      },
-      "expected": {
-        "status": "warning",
-        "messageKey": "MIN_LENGTH"
-      },
-      "tags": ["validation"]
-    },
-
-    {
-      "id": "SR-020",
-      "description": "Empty keyword with category and manufacturer",
-      "flow": "searchByCategoryManufacturer",
-      "override": {
-        "keyword": "",
-        "advanced": true,
-        "categoryLabel": "Electronics",
-        "manufacturerLabel": "Apple"
-      },
-      "expected": {
-        "status": "warning",
-        "messageKey": "MIN_LENGTH"
-      },
-      "tags": ["validation"]
-    },
-
-    {
-      "id": "SR-021",
-      "description": "Search in product descriptions",
-      "flow": "searchInDescription",
-      "override": {
-        "keyword": "build",
-        "advanced": true,
-        "inDescription": true
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["advanced"]
-    },
-
-    {
-      "id": "SR-022",
-      "description": "Search in tags",
-      "flow": "searchInTags",
-      "override": {
-        "keyword": "camera",
-        "advanced": true,
-        "inTags": true
-      },
-      "expected": {
-        "status": "success"
-      },
-      "tags": ["advanced"]
-    }
+    { "id": "SR-001", "description": "Search with empty keyword", "flow": "basicSearch", "override": { "keyword": "" }, "expected": { "status": "warning", "messageKey": "MIN_LENGTH" }, "tags": ["validation"] },
+    { "id": "SR-002", "description": "Search with spaces only", "flow": "basicSearch", "override": { "keyword": "   " }, "expected": { "status": "warning", "messageKey": "MIN_LENGTH" }, "tags": ["validation"] },
+    { "id": "SR-003", "description": "Search with special characters", "flow": "basicSearch", "override": { "keyword": "@#$%^" }, "expected": { "status": "empty", "messageKey": "NO_RESULT" }, "tags": ["edge"] },
+    { "id": "SR-004", "description": "Search with very long keyword", "flow": "basicSearch", "override": { "keyword": "__LONG_TEXT__" }, "expected": { "status": "empty", "messageKey": "NO_RESULT" }, "tags": ["edge"] },
+    { "id": "SR-005", "description": "Search with valid keyword", "flow": "basicSearch", "override": { "keyword": "Apple" }, "expected": { "status": "success" }, "tags": ["positive"] },
+    { "id": "SR-006", "description": "Search with exactly 3 characters", "flow": "basicSearch", "override": { "keyword": "cam" }, "expected": { "status": "success" }, "tags": ["boundary"] },
+    { "id": "SR-007", "description": "Search with less than 3 characters", "flow": "basicSearch", "override": { "keyword": "ab" }, "expected": { "status": "warning", "messageKey": "MIN_LENGTH" }, "tags": ["boundary"] },
+    { "id": "SR-008", "description": "Search keyword with leading/trailing spaces", "flow": "basicSearch", "override": { "keyword": "  laptop  " }, "expected": { "status": "success" }, "tags": ["positive"] },
+    { "id": "SR-009", "description": "Search non-existing product", "flow": "basicSearch", "override": { "keyword": "xyz123" }, "expected": { "status": "empty", "messageKey": "NO_RESULT" }, "tags": ["negative"] },
+    { "id": "SR-010", "description": "Search should be case insensitive", "flow": "basicSearch", "override": { "keyword": "BUILD" }, "expected": { "status": "success" }, "tags": ["positive"] },
+    { "id": "SR-014", "description": "Search by category", "flow": "searchByCategory", "override": { "keyword": "Nokia", "advanced": true, "categoryLabel": "Electronics >> Cell phones" }, "expected": { "status": "success" }, "tags": ["filter"] },
+    { "id": "SR-015", "description": "Search by manufacturer", "flow": "searchByManufacturer", "override": { "keyword": "Apple", "advanced": true, "manufacturerLabel": "Apple" }, "expected": { "status": "success" }, "tags": ["filter"] },
+    { "id": "SR-016", "description": "Search by category and manufacturer", "flow": "searchByCategoryManufacturer", "override": { "keyword": "Apple", "advanced": true, "categoryLabel": "Computers >> Notebooks", "manufacturerLabel": "Apple" }, "expected": { "status": "success" }, "tags": ["filter"] },
+    { "id": "SR-017", "description": "Search including subcategories", "flow": "searchIncludeSub", "override": { "keyword": "Nokia", "advanced": true, "categoryLabel": "Electronics", "includeSub": true }, "expected": { "status": "success" }, "tags": ["filter"] },
+    { "id": "SR-018", "description": "Empty keyword with category filter", "flow": "searchByCategory", "override": { "keyword": "", "advanced": true, "categoryLabel": "Electronics" }, "expected": { "status": "warning", "messageKey": "MIN_LENGTH" }, "tags": ["validation"] },
+    { "id": "SR-019", "description": "Empty keyword with manufacturer filter", "flow": "searchByManufacturer", "override": { "keyword": "", "advanced": true, "manufacturerLabel": "Apple" }, "expected": { "status": "warning", "messageKey": "MIN_LENGTH" }, "tags": ["validation"] },
+    { "id": "SR-020", "description": "Empty keyword with category and manufacturer", "flow": "searchByCategoryManufacturer", "override": { "keyword": "", "advanced": true, "categoryLabel": "Electronics", "manufacturerLabel": "Apple" }, "expected": { "status": "warning", "messageKey": "MIN_LENGTH" }, "tags": ["validation"] },
+    { "id": "SR-021", "description": "Search in product descriptions", "flow": "searchInDescription", "override": { "keyword": "build", "advanced": true, "inDescription": true }, "expected": { "status": "success" }, "tags": ["advanced"] },
+    { "id": "SR-022", "description": "Search in tags", "flow": "searchInTags", "override": { "keyword": "camera", "advanced": true, "inTags": true }, "expected": { "status": "success" }, "tags": ["advanced"] }
   ]
 }

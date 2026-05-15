@@ -4,8 +4,7 @@ import registerData from "../data/register.data.json";
 import { RegisterFormData, RegisterTestCase, RegisterExpected } from "../../types/register.type";
 import { randomEmail } from "../../helpers/commonHelper";
 import { resolveSpecialValues } from "../../helpers/dataHelper";
-import { logStep, logTitle } from "../../helpers/Logger";
-import { waitPastCloudflareIfAny } from "../../helpers/assertions";
+import { logStep, logTitle } from "../../helpers/logger";
 
 type ExtendedRegisterCase = RegisterTestCase & {
   flow?: "duplicateEmail" | "passwordMaskingOnly";
@@ -34,8 +33,6 @@ type RegisterDataFile = {
 const dataFile = registerData as RegisterDataFile;
 
 test.describe("Register Data Driven", () => {
-  //test.describe.configure({ mode: "serial" });
-  //test.describe.configure({ retries: 1 });
 
   let registerPage: RegisterPage;
 
@@ -52,7 +49,6 @@ test.describe("Register Data Driven", () => {
 
     logStep("Navigate to Register page");
     await page.goto(dataFile.URL);
-    await waitPastCloudflareIfAny(page);
   });
 
   const buildData = (override: Partial<RegisterFormData> = {}) => ({

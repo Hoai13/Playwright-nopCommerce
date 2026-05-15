@@ -3,7 +3,7 @@ import { BasePage } from "./BasePage";
 import { RegisterFormData } from "../types/register.type";
 import { RegisterExpected } from "../types/register.type";
 import UIHelpers from "../helpers/UIHelpers";
-import { logStep } from "../helpers/Logger";
+import { logStep } from "../helpers/logger";
 
 const FIELD_MAP: Record<keyof RegisterFormData, string> = {
     firstName: "FirstName",
