@@ -1,12 +1,7 @@
-export type Gender = "Male" | "Female";
-
 export interface RegisterFormData {
-  gender?: Gender;
   firstName?: string;
   lastName?: string;
   email?: string;
-  company?: string;
-  newsletter?: boolean;
   password?: string;
   confirmPassword?: string;
 }
@@ -21,9 +16,31 @@ export interface RegisterExpected {
 export interface RegisterTestCase {
   id: string;
   description: string;
-
   override?: Partial<RegisterFormData>;
-
   expected: RegisterExpected;
   tags?: string[];
 }
+
+export type ExtendedRegisterCase = RegisterTestCase & {
+  flow?: "duplicateEmail" | "passwordMaskingOnly";
+};
+
+export type RegisterDataFile = {
+  URL: string;
+  MESSAGES: {
+    REGISTER_SUCCESS: string;
+  };
+  BASE_VALID: RegisterFormData;
+  BUSINESS_FLOW: {
+    DUPLICATE_EMAIL: {
+      summaryMessage: string;
+    };
+  };
+  UI_ASSERTIONS: {
+    PASSWORD_MASKING: {
+      passwordType: string;
+      confirmPasswordType: string;
+    };
+  };
+  CASES: ExtendedRegisterCase[];
+};

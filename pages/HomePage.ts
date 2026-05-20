@@ -2,6 +2,7 @@ import { Locator, Page, expect } from "@playwright/test";
 import { BasePage } from "./BasePage";
 import UIHelpers from "../helpers/UIHelpers";
 import { logStep } from "../helpers/logger";
+import { ExpectedResult } from "../types/cart.type";
 
 export class HomePage extends BasePage {
   readonly searchInput = this.page.locator("#small-searchterms");
@@ -21,18 +22,14 @@ export class HomePage extends BasePage {
 
   // ===== NAVIGATION =====
   async goto(url: string) {
-    logStep(`Navigate to: ${url}`);
-
     await super.goto(url);
     await this.waitForPageLoad();
-
     await UIHelpers.waitForVisible(this.searchInput, "Search Input");
   }
 
   // ===== SEARCH =====
   async search(keyword: string, useEnter = false) {
     logStep(`Search: "${keyword}" (enter=${useEnter})`);
-
     await this.inputText(this.searchInput, keyword, "Search Input");
 
     if (useEnter) {
@@ -64,7 +61,6 @@ export class HomePage extends BasePage {
 
   async hoverCategory(name: string) {
     logStep(`Hover category: ${name}`);
-
     const menu = this.getTopMenuItem(name);
     await UIHelpers.waitForVisible(menu, `Top menu: ${name}`);
     await menu.hover();
@@ -72,16 +68,13 @@ export class HomePage extends BasePage {
 
   async navigateToCategory(top: string, sub?: string) {
     logStep(`Navigate: ${top} ${sub ? `> ${sub}` : ""}`);
-
     const topMenu = this.getTopMenuItem(top);
     await UIHelpers.waitForVisible(topMenu, `Top menu: ${top}`);
 
     if (sub) {
       await topMenu.hover();
-
       const subMenu = this.getSubMenuItem(sub);
       await UIHelpers.waitForVisible(subMenu, `Sub menu: ${sub}`);
-
       await this.clickElement(subMenu, `Sub menu: ${sub}`);
     } else {
       await this.clickElement(topMenu, `Top menu: ${top}`);
@@ -92,7 +85,6 @@ export class HomePage extends BasePage {
 
   async getSubMenuTexts(): Promise<string[]> {
     const items = this.page.locator(".header-menu .menu__list-view .menu__link");
-
     await UIHelpers.waitForVisible(items.first(), "Sub menu items");
 
     return (await items.allInnerTexts())
@@ -102,13 +94,19 @@ export class HomePage extends BasePage {
 
   // ===== NOTIFICATION =====
   async verifyNotification(type: "success" | "error", message: string) {
-    const locator =
-      type === "success" ? this.successNotification : this.errorNotification;
-
+    const locator = type === "success" ? this.successNotification : this.errorNotification;
     logStep(`Verify ${type} notification`);
-
     await UIHelpers.waitForVisible(locator, `${type} notification`, 15000);
     await expect(locator).toContainText(message);
+  }
+
+  async verifyNotificationResult(expected: ExpectedResult) {
+    if (!(expected as any).message) return;
+
+    await this.verifyNotification(
+      expected.status ?? "error",
+      (expected as any).message
+    );
   }
 
   async closeNotificationIfVisible() {
@@ -120,16 +118,32 @@ export class HomePage extends BasePage {
   // ===== MINI CART =====
   async openMiniCart() {
     logStep("Open mini cart");
-
     await this.page.evaluate(() => window.scrollTo(0, 0));
-
     await UIHelpers.waitForVisible(this.miniCartLabel, "Mini Cart Label");
     await this.miniCartLabel.hover();
+    await UIHelpers.waitForVisible(this.miniCartDropdown, "Mini Cart Dropdown");
+  }
 
-    await UIHelpers.waitForVisible(
-      this.miniCartDropdown,
-      "Mini Cart Dropdown"
-    );
+  async verifyMiniCartResult(expected: ExpectedResult) {
+    if (expected.miniCart !== undefined) {
+      await this.verifyMiniCartVisible();
+    }
+
+    if (expected.miniCart?.hidden) {
+      await this.verifyMiniCartHidden();
+    }
+
+    if (expected.miniCart?.empty) {
+      await this.verifyMiniCartEmpty();
+    }
+
+    if (expected.miniCart?.contains) {
+      await this.verifyMiniCartContains(expected.miniCart.contains);
+    }
+
+    if (expected.miniCart?.countGreaterThanZero) {
+      await this.verifyMiniCartCountNotZero();
+    }
   }
 
   async verifyMiniCartEmpty(
@@ -161,5 +175,4 @@ export class HomePage extends BasePage {
   async verifyMiniCartHidden() {
     await UIHelpers.waitForHidden(this.miniCartDropdown, "Mini Cart Dropdown");
   }
-
 }

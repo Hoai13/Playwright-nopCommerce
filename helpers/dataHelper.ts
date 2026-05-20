@@ -11,7 +11,7 @@ const SPECIAL_TOKENS = {
 
 export const resolveSpecialTokens = <T extends Record<string, any>>(
   data: T,
-  values?: Record<string, string> // Thêm tham số values (optional)
+  values?: Record<string, string> 
 ): T => {
   const resolved: Record<string, any> = { ...data };
 
@@ -19,12 +19,10 @@ export const resolveSpecialTokens = <T extends Record<string, any>>(
     let value = resolved[key];
     if (typeof value !== "string") continue;
 
-    // BƯỚC MỚI: Nếu giá trị là một Key trong VALUES (ví dụ: "TITLE_201"), lấy giá trị thực tế ra
     if (values && values[value]) {
       value = values[value];
     }
 
-    // BƯỚC CŨ: Xử lý các token đặc biệt (__LONG_TEXT__,...)
     switch (value) {
       case SPECIAL_TOKENS.LONG_TEXT:
         resolved[key] = generateRandomString(256);
@@ -35,7 +33,10 @@ export const resolveSpecialTokens = <T extends Record<string, any>>(
       case SPECIAL_TOKENS.LONG_TEXT_201:
         resolved[key] = generateRandomString(201);
         break;
-      // Nếu không phải token đặc biệt, giữ nguyên giá trị đã lấy từ VALUES (ví dụ: "S&")
+      case SPECIAL_TOKENS.LONG_EMAIL:
+        resolved[key] =
+          `${generateRandomString(250)}@gmail.com`;
+        break;
       default:
         resolved[key] = value; 
     }

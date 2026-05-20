@@ -57,9 +57,6 @@ The project covers several main modules:
 ```text id="nr0vsm"
 PLAYWRIGHT-NOPCOMMERCE
 │
-├── .github/
-│   └── workflows/
-│
 ├── helpers/
 │
 ├── logs/
@@ -213,6 +210,4 @@ to improve:
 
 Nguyễn Thị Hoài
 Quy Nhon University
-Software Engineering
-
 ---

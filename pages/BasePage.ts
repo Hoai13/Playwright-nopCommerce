@@ -3,7 +3,7 @@ import UIHelpers from "../helpers/UIHelpers";
 import { logStep } from "../helpers/logger";
 
 export class BasePage {
-  constructor(readonly page: Page) {}
+  constructor(readonly page: Page) {} //NHẬN browser tab từ Playwright rồi lưu vào class
 
   async goto(url: string): Promise<void> {
     logStep(`Navigating to ${url}`);

@@ -9,16 +9,19 @@ export type BaseCase = {
 export type ExpectedResult = {
   status?: TestStatus;
   notification?: string;
-  messageKey?: string;
+  message?: string;
   urlContains?: string;
   priceChanged?: boolean;
   containsConfiguration?: boolean;
   subtotalUpdated?: boolean;
+
   cart?: {
     quantity?: number;
     itemCount?: number;
     empty?: boolean;
+    containsProduct?: string;
   };
+
   miniCart?: {
     visible?: boolean;
     hidden?: boolean;
@@ -27,10 +30,6 @@ export type ExpectedResult = {
     quantity?: number;
     countGreaterThanZero?: boolean;
   };
-  cartQuantity?: string;
-  cartItemCount?: number;
-  cartEmpty?: boolean;
-  miniCartCountGreaterThanZero?: boolean;
 };
 
 export type ProductInput = {

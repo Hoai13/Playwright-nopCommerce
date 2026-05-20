@@ -23,9 +23,9 @@ function write(message: string) {
 
 export const logStep = (msg: string) => write(`${msg}`);
 export const logInfo = (msg: string) => write(`${msg}`);
-export const logSuccess = (msg: string) => write(`${msg}`);
-export const logWarning = (msg: string) => write(`${msg}`);
-export const logError = (msg: string) => write(`${msg}`);
+export const logSuccess = (msg: string) => write(`[SUCCESS] ${msg}`);
+export const logWarning = (msg: string) => write(`[WARNING] ${msg}`);
+export const logError = (msg: string) => write(`[ERROR] ${msg}`);
 
 export function logTitle(title: string) {
   const line = "=".repeat(80);
