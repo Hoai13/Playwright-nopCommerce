@@ -20,37 +20,265 @@
       "confirmPasswordType": "password"
     }
   },
-
   "CASES": [
-    { "id": "RE-001", "description": "Register successful", "override": {}, "expected": { "success": true }},
-
-    { "id": "RE-005", "description": "First name empty", "override": { "firstName": "" }, "expected": { "success": false, "field": "firstName", "message": "First name is required." } },
-    { "id": "RE-006", "description": "First name numeric", "override": { "firstName": "12345" }, "expected": { "success": false, "field": "firstName" } },
-    { "id": "RE-007", "description": "First name special", "override": { "firstName": "@#$%" }, "expected": { "success": false, "field": "firstName" } },
-    { "id": "RE-008", "description": "First name too long", "override": { "firstName": "__LONG_TEXT__" }, "expected": { "success": false, "field": "firstName" } },
-
-    { "id": "RE-009", "description": "Last name empty", "override": { "lastName": "" }, "expected": { "success": false, "field": "lastName", "message": "Last name is required." } },
-    { "id": "RE-010", "description": "Last name numeric", "override": { "lastName": "12345" }, "expected": { "success": false, "field": "lastName" } },
-    { "id": "RE-011", "description": "Last name special", "override": { "lastName": "@#$%" }, "expected": { "success": false, "field": "lastName" } },
-    { "id": "RE-012", "description": "Last name too long", "override": { "lastName": "__LONG_TEXT__" }, "expected": { "success": false, "field": "lastName" } },
-
-    { "id": "RE-013", "description": "Email empty", "override": { "email": "" }, "expected": { "success": false, "field": "email", "message": "Email is required." }},
-    { "id": "RE-014", "description": "Invalid email", "override": { "email": "abcgmail.com" }, "expected": { "success": false, "field": "email", "message": "Please enter a valid email address." }},
-    { "id": "RE-015", "description": "Email no domain", "override": { "email": "abc@" }, "expected": { "success": false, "field": "email", "message": "Please enter a valid email address." }},
-    { "id": "RE-016", "description": "Email with space", "override": { "email": "abc   @gmail.com" }, "expected": { "success": false, "field": "email", "message": "Please enter a valid email address." }},
-    { "id": "RE-017", "description": "Email special", "override": { "email": "abcde!$&*%@gmail.com" }, "expected": { "success": false, "field": "email" }},
-    { "id": "RE-018", "description": "Email too long", "override": { "email": "__LONG_EMAIL__" }, "expected": { "success": false, "field": "email" }},
-
-    { "id": "RE-019", "description": "Duplicate email", "override": {}, "expected": { "success": false, "summaryMessage": "The specified email already exists" }, "flow": "duplicateEmail" },
-
-    { "id": "RE-020", "description": "Password empty", "override": { "password": "", "confirmPassword": "" }, "expected": { "success": false, "field": "confirmPassword", "message": "Password is required." }},
-    { "id": "RE-021", "description": "Password short", "override": { "password": "123", "confirmPassword": "123" }, "expected": { "success": false, "field": "password", "message": "Password must meet the following rules: must have at least 6 characters and not greater than 64 characters" }},
-    { "id": "RE-022", "description": "Password too long", "override": { "password": "__LONG_PASSWORD__", "confirmPassword": "__LONG_PASSWORD__" }, "expected": { "success": false, "field": "password", "message": "Password must meet the following rules: must have at least 6 characters and not greater than 64 characters" }},
-
-    { "id": "RE-023", "description": "Confirm password empty", "override": { "confirmPassword": "" }, "expected": { "success": false, "field": "confirmPassword", "message": "Password is required." }},
-    { "id": "RE-024", "description": "Password mismatch", "override": { "password": "123456", "confirmPassword": "123" }, "expected": { "success": false, "field": "confirmPassword", "message": "The password and confirmation password do not match." }},
-
-    { "id": "RE-025", "description": "Password field masking", "override": {}, "expected": { "success": true }, "flow": "passwordMaskingOnly" },
-    { "id": "RE-026", "description": "Submit by Enter", "override": {}, "expected": { "success": true }}
+    {
+      "id": "RE-001",
+      "description": "Register successful",
+      "override": {},
+      "expected": {
+        "success": true
+      }
+    },
+    {
+      "id": "RE-005",
+      "description": "First name empty",
+      "override": {
+        "firstName": ""
+      },
+      "expected": {
+        "success": false,
+        "field": "firstName",
+        "message": "First name is required."
+      }
+    },
+    {
+      "id": "RE-006",
+      "description": "First name numeric",
+      "override": {
+        "firstName": "12345"
+      },
+      "expected": {
+        "success": false,
+        "field": "firstName"
+      }
+    },
+    {
+      "id": "RE-007",
+      "description": "First name special",
+      "override": {
+        "firstName": "@#$%"
+      },
+      "expected": {
+        "success": false,
+        "field": "firstName"
+      }
+    },
+    {
+      "id": "RE-008",
+      "description": "First name too long",
+      "override": {
+        "firstName": "__LONG_TEXT__"
+      },
+      "expected": {
+        "success": false,
+        "field": "firstName"
+      }
+    },
+    {
+      "id": "RE-009",
+      "description": "Last name empty",
+      "override": {
+        "lastName": ""
+      },
+      "expected": {
+        "success": false,
+        "field": "lastName",
+        "message": "Last name is required."
+      }
+    },
+    {
+      "id": "RE-010",
+      "description": "Last name numeric",
+      "override": {
+        "lastName": "12345"
+      },
+      "expected": {
+        "success": false,
+        "field": "lastName"
+      }
+    },
+    {
+      "id": "RE-011",
+      "description": "Last name special",
+      "override": {
+        "lastName": "@#$%"
+      },
+      "expected": {
+        "success": false,
+        "field": "lastName"
+      }
+    },
+    {
+      "id": "RE-012",
+      "description": "Last name too long",
+      "override": {
+        "lastName": "__LONG_TEXT__"
+      },
+      "expected": {
+        "success": false,
+        "field": "lastName"
+      }
+    },
+    {
+      "id": "RE-013",
+      "description": "Email empty",
+      "override": {
+        "email": ""
+      },
+      "expected": {
+        "success": false,
+        "field": "email",
+        "message": "Email is required."
+      }
+    },
+    {
+      "id": "RE-014",
+      "description": "Invalid email",
+      "override": {
+        "email": "abcgmail.com"
+      },
+      "expected": {
+        "success": false,
+        "field": "email",
+        "message": "Please enter a valid email address."
+      }
+    },
+    {
+      "id": "RE-015",
+      "description": "Email no domain",
+      "override": {
+        "email": "abc@"
+      },
+      "expected": {
+        "success": false,
+        "field": "email",
+        "message": "Please enter a valid email address."
+      }
+    },
+    {
+      "id": "RE-016",
+      "description": "Email with space",
+      "override": {
+        "email": "abc   @gmail.com"
+      },
+      "expected": {
+        "success": false,
+        "field": "email",
+        "message": "Please enter a valid email address."
+      }
+    },
+    {
+      "id": "RE-017",
+      "description": "Email special",
+      "override": {
+        "email": "abcde!$&*%@gmail.com"
+      },
+      "expected": {
+        "success": false,
+        "field": "email"
+      }
+    },
+    {
+      "id": "RE-018",
+      "description": "Email too long",
+      "override": {
+        "email": "__LONG_EMAIL__"
+      },
+      "expected": {
+        "success": false,
+        "field": "email"
+      }
+    },
+    {
+      "id": "RE-019",
+      "description": "Duplicate email",
+      "override": {},
+      "expected": {
+        "success": false,
+        "summaryMessage": "The specified email already exists"
+      },
+      "flow": "duplicateEmail"
+    },
+    {
+      "id": "RE-020",
+      "description": "Password empty",
+      "override": {
+        "password": "",
+        "confirmPassword": ""
+      },
+      "expected": {
+        "success": false,
+        "field": "confirmPassword",
+        "message": "Password is required."
+      }
+    },
+    {
+      "id": "RE-021",
+      "description": "Password short",
+      "override": {
+        "password": "123",
+        "confirmPassword": "123"
+      },
+      "expected": {
+        "success": false,
+        "field": "password",
+        "message": "Password must meet the following rules: must have at least 6 characters and not greater than 64 characters"
+      }
+    },
+    {
+      "id": "RE-022",
+      "description": "Password too long",
+      "override": {
+        "password": "__LONG_PASSWORD__",
+        "confirmPassword": "__LONG_PASSWORD__"
+      },
+      "expected": {
+        "success": false,
+        "field": "password",
+        "message": "Password must meet the following rules: must have at least 6 characters and not greater than 64 characters"
+      }
+    },
+    {
+      "id": "RE-023",
+      "description": "Confirm password empty",
+      "override": {
+        "confirmPassword": ""
+      },
+      "expected": {
+        "success": false,
+        "field": "confirmPassword",
+        "message": "Password is required."
+      }
+    },
+    {
+      "id": "RE-024",
+      "description": "Password mismatch",
+      "override": {
+        "password": "123456",
+        "confirmPassword": "123"
+      },
+      "expected": {
+        "success": false,
+        "field": "confirmPassword",
+        "message": "The password and confirmation password do not match."
+      }
+    },
+    {
+      "id": "RE-025",
+      "description": "Password field masking",
+      "override": {},
+      "expected": {
+        "success": true
+      },
+      "flow": "passwordMaskingOnly"
+    },
+    {
+      "id": "RE-026",
+      "description": "Submit by Enter",
+      "override": {},
+      "expected": {
+        "success": true
+      }
+    }
   ]
 }
