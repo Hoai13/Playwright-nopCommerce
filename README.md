@@ -62,12 +62,6 @@ PLAYWRIGHT-NOPCOMMERCE
 ├── logs/
 │
 ├── pages/
-│   ├── base.page.ts
-│   ├── register.page.ts
-│   ├── search.page.ts
-│   ├── category.page.ts
-│   ├── cart.page.ts
-│   └── review.page.ts
 │
 ├── playwright-report/
 │
